@@ -1,0 +1,204 @@
+﻿====================================================================================================
+Ldev/local/newsoul/j;-><clinit>()V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     ''
+     '18'
+     '2'
+     '20'
+     '24'
+     '26'
+     '27'
+     '31'
+     '35'
+     '36'
+     '5'
+     '9'
+     'ad_chat_tools'
+     'ad_conversation'
+     'ad_detail'
+     'ad_envelope'
+     'ad_feed'
+     'ad_float'
+     'ad_group'
+     'ad_interstitial'
+     'ad_me'
+     'ad_notice'
+     'ad_planet'
+     'ad_reward_chat'
+     'ad_reward_drama'
+     'ad_reward_web'
+     'ad_search'
+     'ad_tag'
+     'ad_tag_web'
+     'ad_video'
+     'block_splash'
+     '保留聊天'
+     '冷启动'
+     '包括首次启'
+     '已缓存的推广图标'
+     '帖'
+     '广'
+     '悬'
+     '我的'
+     '插屏'
+     '搜索'
+     '星球'
+     '短剧'
+     '竖'
+     '系统'
+     '网页'
+     '群组'
+     '聊天'
+     '聊天'
+     '聊天'
+     '话'
+     '话题'
+     '通知'
+TYPES: ['Landroid/os/Handler;', 'Ljava/util/HashMap;', 'Ljava/util/HashSet;', 'Ljava/util/WeakHashMap;']
+CALLEES:
+     Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+     Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+     Ljava/util/Collections;->synchronizedMap(Ljava/util/Map;)Ljava/util/Map;
+     Ljava/util/Collections;->synchronizedSet(Ljava/util/Set;)Ljava/util/Set;
+     Ljava/util/HashMap;-><init>()V
+     Ljava/util/HashSet;-><init>()V
+     Ljava/util/WeakHashMap;-><init>()V
+
+====================================================================================================
+Ldev/local/newsoul/j;->a(Landroid/view/View;Ldev/local/newsoul/i;)V
+----------------------------------------------------------------------------------------------------
+CALLEES:
+     Landroid/view/View;->getContext()Landroid/content/Context;
+     Landroid/view/View;->getVisibility()I
+     Landroid/view/View;->setVisibility(I)V
+     Ldev/local/newsoul/j;->b(Landroid/content/Context;Ljava/lang/String;)Z
+
+====================================================================================================
+Ldev/local/newsoul/j;->b(Landroid/content/Context;Ljava/lang/String;)Z
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'block_splash'
+CALLEES:
+     Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+     Ldev/local/newsoul/w2;->o(Landroid/content/Context;)Landroid/content/SharedPreferences;
+     Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+====================================================================================================
+Ldev/local/newsoul/j;->c(Ljava/lang/String;Ljava/lang/Throwable;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'SoulHook102'
+     'ad control unavailable: '
+TYPES: ['Ljava/lang/StringBuilder;']
+CALLEES:
+     Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+     Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+     Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+     Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+====================================================================================================
+Ldev/local/newsoul/j;->d(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+----------------------------------------------------------------------------------------------------
+TYPES: ['Ljava/lang/NoSuchFieldException;']
+CALLEES:
+     Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
+     Ljava/lang/NoSuchFieldException;-><init>(Ljava/lang/String;)V
+     Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+
+====================================================================================================
+Ldev/local/newsoul/j;->e(Ljava/lang/String;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'SoulHook102'
+CALLEES:
+     Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+     Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;)V
+
+====================================================================================================
+Ldev/local/newsoul/j;->f(Ljava/lang/ClassLoader;Ljava/lang/String;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'ad_interstitial'
+     'dismiss'
+     'getContext'
+     'onStart'
+TYPES: ['Ldev/local/newsoul/e;']
+CALLEES:
+     Ldev/local/newsoul/e;-><init>(Ljava/lang/reflect/AnnotatedElement;Ljava/lang/reflect/AccessibleObject;Ljava/lang/Object;I)V
+     Ldev/local/newsoul/j;->c(Ljava/lang/String;Ljava/lang/Throwable;)V
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+     Ljava/util/Set;->add(Ljava/lang/Object;)Z
+
+====================================================================================================
+Ldev/local/newsoul/j;->g(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Z)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'BaseViewHolder'
+     'no bind methods'
+     'onBind'
+     'onCreate'
+TYPES: ['Ldev/local/newsoul/d;', 'Ljava/lang/IllegalStateException;']
+CALLEES:
+     Ldev/local/newsoul/d;-><init>(Ljava/lang/String;Z)V
+     Ldev/local/newsoul/j;->c(Ljava/lang/String;Ljava/lang/Throwable;)V
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;
+     Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+     Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+     Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+     Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+     Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+     Ljava/lang/reflect/Method;->getParameterCount()I
+     Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
+
+====================================================================================================
+Ldev/local/newsoul/j;->h(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'ad_float'
+     'ad_interstitial'
+     'cn.soulapp.android.ad.core.services.plaforms.listener.SoulAdRequestListener'
+     'lb.h'
+     'loadAds'
+     'new-soul/ad-loader/'
+     'onAdFailed'
+TYPES: ['Ldev/local/newsoul/a;', 'Ldev/local/newsoul/b;', 'Ljava/lang/String;', 'Ljava/lang/StringBuilder;']
+CALLEES:
+     Ldev/local/newsoul/a;-><init>(I)V
+     Ldev/local/newsoul/b;-><init>(Ljava/lang/reflect/Field;Ljava/lang/reflect/Field;Ljava/lang/reflect/Field;Ljava/lang/reflect/Method;I)V
+     Ldev/local/newsoul/j;->c(Ljava/lang/String;Ljava/lang/Throwable;)V
+     Ldev/local/newsoul/j;->d(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Ljava/lang/Class;->getDeclaredConstructors()[Ljava/lang/reflect/Constructor;
+     Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+     Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+     Ljava/lang/StringBuilder;-><init>()V
+     Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+     Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+     Ljava/util/HashMap;->values()Ljava/util/Collection;
+     Ljava/util/Set;->add(Ljava/lang/Object;)Z
+     Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
+
+====================================================================================================
+Ldev/local/newsoul/j;->i(Landroid/view/View;Ljava/lang/String;)V
+----------------------------------------------------------------------------------------------------
+TYPES: ['Ldev/local/newsoul/i;']
+CALLEES:
+     Ldev/local/newsoul/i;-><init>(Landroid/view/View;Ljava/lang/String;)V
+     Ldev/local/newsoul/j;->a(Landroid/view/View;Ldev/local/newsoul/i;)V
+     Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+     Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+

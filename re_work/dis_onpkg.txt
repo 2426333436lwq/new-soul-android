@@ -1,0 +1,911 @@
+﻿====================================================================================================
+Ldev/local/newsoul/SoulHook;->onPackageReady(Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;)V
+  0000  op08                  
+  0002  op2b                  
+  0008  op12                  
+  000a  const-string            -> 'Skipping duplicate module; active='
+  000e  op55                    -> Ldev/local/newsoul/SoulHook;->targetProcess:Z
+  0012  op38                  
+  0018  op83                  
+  001c  oped                  
+  001e  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->isFirstPackage()Z
+  0024  op0a                  
+  0026  op38                  
+  002c  opb5                  
+  0030  op5d                    -> Landroid/widget/LinearLayout$LayoutParams;->gravity:I
+  0034  op0c                  
+  0036  invoke-virtual          -> Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  003c  op0a                  
+  003e  op39                  
+  0042  op29                  
+  0046  invoke-static           -> Ljava/lang/System;->getProperties()Ljava/util/Properties;
+  004c  op0c                  
+  004e  op1d                  
+  0050  const-string            -> 'newsoul.active.module'
+  0054  invoke-static           -> Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+  005a  op0c                  
+  005c  op38                  
+  0062  opcf                  
+  0066  op0c                  
+  0068  invoke-direct           -> Ldev/local/newsoul/SoulHook;->info(Ljava/lang/String;)V
+  006e  op1e                  
+  0070  op0e                  
+  0072  op0d                  
+  0074  op29                  
+  0078  const-string            -> 'newsoul.active.module'
+  007c  const-string            -> 'dev.local.newsoul.public'
+  0080  invoke-static           -> Ljava/lang/System;->setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  0086  op1e                  
+  0088  const-string            -> 'active variant=dev.local.newsoul.public'
+  008c  invoke-direct           -> Ldev/local/newsoul/SoulHook;->info(Ljava/lang/String;)V
+  0092  sget-object             -> Ldev/local/newsoul/V;->a:Ljava/util/concurrent/ScheduledExecutorService;
+  0096  invoke-virtual/range    -> Lio/github/libxposed/api/XposedModule;->getFrameworkName()Ljava/lang/String;
+  009c  op0c                  
+  009e  invoke-virtual/range    -> Lio/github/libxposed/api/XposedModule;->getFrameworkVersion()Ljava/lang/String;
+  00a4  op0c                  
+  00a6  invoke-virtual/range    -> Lio/github/libxposed/api/XposedModule;->getApiVersion()I
+  00ac  op0a                  
+  00ae  new-instance            -> Ljava/lang/StringBuilder;
+  00b2  invoke-direct           -> Ljava/lang/StringBuilder;-><init>()V
+  00b8  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  00be  const-string            -> ' / '
+  00c2  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  00c8  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  00ce  const-string            -> ' / API '
+  00d2  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  00d8  invoke-virtual          -> Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  00de  invoke-virtual          -> Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  00e4  op0c                  
+  00e6  sput-object             -> Ldev/local/newsoul/V;->l:Ljava/lang/String;
+  00ea  op12                  
+  00ec  const-class             -> Landroid/app/Application;
+  00f0  const-string            -> 'onCreate'
+  00f4  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  00fa  op0c                  
+  00fc  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0102  op0c                  
+  0104  const-string            -> 'new-soul/debug-init'
+  0108  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  010e  op0c                  
+  0110  sget-object             -> Lio/github/libxposed/api/XposedInterface$ExceptionMode;->PROTECTIVE:Lio/github/libxposed/api/XposedInterface$ExceptionMode;
+  0114  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  011a  op0c                  
+  011c  new-instance            -> Ldev/local/newsoul/a;
+  0120  op13                  
+  0122  op0d                  
+  0124  invoke-direct           -> Ldev/local/newsoul/a;-><init>(I)V
+  012a  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  0130  op28                  
+  0132  op0d                  
+  0134  const-string            -> 'debug.lifecycle'
+  0138  invoke-static           -> Ldev/local/newsoul/V;->i(Ljava/lang/String;Ljava/lang/Throwable;)V
+  013e  sput-object             -> Ldev/local/newsoul/g0;->a:Lio/github/libxposed/api/XposedModule;
+  0142  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0148  op0c                  
+  014a  const-string            -> 'new soul: splash hook installed (Soul 6.37.0)'
+  014e  const-string            -> 'a'
+  0152  const-string            -> 'SoulHook102'
+  0156  op63                    -> Ldev/local/newsoul/Q0;->W:Z
+  015a  op12                  
+  015c  op38                  
+  0162  op37                  
+  0168  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  016e  op0c                  
+  0170  const-string            -> 'onCreate'
+  0174  const-class             -> Landroid/os/Bundle;
+  0178  op24                  
+  017e  op0c                  
+  0180  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0186  op0c                  
+  0188  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  018e  op0c                  
+  0190  const-string            -> 'new-soul/cold-launch-flag'
+  0194  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  019a  op0c                  
+  019c  sget-object             -> Lio/github/libxposed/api/XposedInterface$ExceptionMode;->PROTECTIVE:Lio/github/libxposed/api/XposedInterface$ExceptionMode;
+  01a0  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  01a6  op0c                  
+  01a8  new-instance            -> Ldev/local/newsoul/y2;
+  01ac  invoke-direct           -> Ldev/local/newsoul/y2;-><init>(Lio/github/libxposed/api/XposedModule;I)V
+  01b2  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  01b8  const-string            -> 'onNewIntent'
+  01bc  const-class             -> Landroid/content/Intent;
+  01c0  op24                  
+  01c6  op0c                  
+  01c8  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  01ce  op0c                  
+  01d0  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  01d6  op0c                  
+  01d8  const-string            -> 'new-soul/relaunch-flag'
+  01dc  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  01e2  op0c                  
+  01e4  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  01ea  op0c                  
+  01ec  new-instance            -> Ldev/local/newsoul/y2;
+  01f0  invoke-direct           -> Ldev/local/newsoul/y2;-><init>(Lio/github/libxposed/api/XposedModule;I)V
+  01f6  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  01fc  const-string            -> 'new soul: startup intent hooks installed'
+  0200  invoke-static           -> Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+  0206  op28                  
+  0208  op0d                  
+  020a  const-string            -> 'new soul: startup intent hooks unavailable'
+  020e  invoke-static           -> Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  0214  const-class             -> Ljava/lang/String;
+  0218  const-string            -> 'tc.e$a'
+  021c  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0222  op0c                  
+  0224  const-string            -> 'j'
+  0228  op24                  
+  022e  op0c                  
+  0230  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0236  op0c                  
+  0238  const-string            -> 'm'
+  023c  op24                  
+  0242  op0c                  
+  0244  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  024a  op0c                  
+  024c  const-string            -> 'onApplicationForeground'
+  0250  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0256  op0c                  
+  0258  const-string            -> 'ea.a'
+  025c  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0262  op0c                  
+  0264  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  026a  op0c                  
+  026c  invoke-virtual          -> Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+  0272  op0c                  
+  0274  sget-object             -> Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+  0278  op33                  
+  027c  invoke-virtual          -> Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+  0282  op0c                  
+  0284  sget-object             -> Ljava/lang/Void;->TYPE:Ljava/lang/Class;
+  0288  op33                  
+  028c  const-class             -> Landroid/content/Context;
+  0290  invoke-virtual          -> Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+  0296  op0c                  
+  0298  invoke-virtual          -> Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+  029e  op0a                  
+  02a0  op38                  
+  02a6  op57                    -> Ldev/local/newsoul/I2;->u:Ldev/local/newsoul/F2;
+  02aa  op0c                  
+  02ac  const-string            -> 'new-soul/hot-splash-gate'
+  02b0  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  02b6  op0c                  
+  02b8  sget-object             -> Lio/github/libxposed/api/XposedInterface$ExceptionMode;->PROTECTIVE:Lio/github/libxposed/api/XposedInterface$ExceptionMode;
+  02bc  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  02c2  op0c                  
+  02c4  new-instance            -> Ldev/local/newsoul/D;
+  02c8  invoke-direct           -> Ldev/local/newsoul/D;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+  02ce  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  02d4  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->deoptimize(Ljava/lang/reflect/Executable;)Z
+  02da  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->deoptimize(Ljava/lang/reflect/Executable;)Z
+  02e0  op6a                    -> Ldev/local/newsoul/Q0;->X:Z
+  02e4  const-string            -> 'new soul: hot splash hook installed (Soul 6.37.0)'
+  02e8  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;)V
+  02ee  op28                  
+  02f0  op0d                  
+  02f2  op28                  
+  02f4  new-instance            -> Ljava/lang/IllegalStateException;
+  02f8  const-string            -> 'Unexpected Soul hot startup signature'
+  02fc  invoke-direct           -> Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+  0302  op27                  
+  0304  const-string            -> 'new soul: hot splash hook unavailable'
+  0308  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+  030e  const-string            -> 'cn.soulapp.android.component.startup.main.MainScheduler'
+  0312  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0318  op0c                  
+  031a  const-string            -> 'v'
+  031e  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0324  op0c                  
+  0326  const-string            -> 's'
+  032a  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0330  op0c                  
+  0332  invoke-virtual          -> Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  0338  op0c                  
+  033a  invoke-virtual          -> Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+  0340  op0c                  
+  0342  sget-object             -> Ljava/lang/Void;->TYPE:Ljava/lang/Class;
+  0346  op33                  
+  034a  invoke-virtual          -> Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+  0350  op0c                  
+  0352  op33                  
+  0356  invoke-virtual          -> Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+  035c  invoke-virtual          -> Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+  0362  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0368  op0c                  
+  036a  const-string            -> 'new-soul/skip-startup-ad'
+  036e  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0374  op0c                  
+  0376  sget-object             -> Lio/github/libxposed/api/XposedInterface$ExceptionMode;->PROTECTIVE:Lio/github/libxposed/api/XposedInterface$ExceptionMode;
+  037a  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0380  op0c                  
+  0382  new-instance            -> Ldev/local/newsoul/e;
+  0386  op12                  
+  0388  invoke-direct           -> Ldev/local/newsoul/e;-><init>(Ljava/lang/reflect/AnnotatedElement;Ljava/lang/reflect/AccessibleObject;Ljava/lang/Object;I)V
+  038e  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  0394  op6a                    -> Ldev/local/newsoul/Q0;->W:Z
+  0398  invoke-static           -> Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+  039e  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;)V
+  03a4  op28                  
+  03a6  op0d                  
+  03a8  op28                  
+  03aa  new-instance            -> Ljava/lang/IllegalStateException;
+  03ae  const-string            -> 'Unexpected Soul startup method signature'
+  03b2  invoke-direct           -> Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+  03b8  op27                  
+  03ba  const-string            -> 'new soul: splash hook unavailable; original startup retained'
+  03be  invoke-static           -> Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  03c4  const-string            -> 'new soul: splash hook unavailable'
+  03c8  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+  03ce  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  03d4  op0c                  
+  03d6  const-string            -> 'a'
+  03da  sget-object             -> Ldev/local/newsoul/j;->b:Ljava/util/Set;
+  03de  const-string            -> 'b'
+  03e2  const-string            -> 'ad_feed'
+  03e6  sput-object             -> Ldev/local/newsoul/j;->g:Lio/github/libxposed/api/XposedModule;
+  03ea  const-string            -> 'cn.soulapp.android.component.square.main.squarepost.SquareAdapter'
+  03ee  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  03f4  op0c                  
+  03f6  const-string            -> 'com.chad.library.adapter.base.BaseQuickAdapter'
+  03fa  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0400  op0c                  
+  0402  const-string            -> 'la.a'
+  0406  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  040c  op0c                  
+  040e  const-string            -> 'ia.a'
+  0412  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0418  op0c                  
+  041a  new-instance            -> Ljava/util/HashSet;
+  041e  const-string            -> 'addData'
+  0422  const-string            -> 'setData'
+  0426  const-string            -> 'setList'
+  042a  const-string            -> 'replaceData'
+  042e  const-string            -> 'setNewInstance'
+  0432  const-string            -> 'setNewData'
+  0436  const-string            -> 'setDiffNewData'
+  043a  op25                  
+  0440  op0c                  
+  0442  invoke-static           -> Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+  0448  op0c                  
+  044a  invoke-direct           -> Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+  0450  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;
+  0456  op0c                  
+  0458  op21                  
+  045a  op01                  
+  045c  op01                  
+  045e  op35                  
+  0464  op0e                  
+  0466  invoke-virtual          -> Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+  046c  op0c                  
+  046e  invoke-virtual          -> Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
+  0474  op0a                  
+  0476  op38                  
+  047c  op18                  
+  0480  op0c                  
+  0482  sget-object             -> Ljava/lang/Void;->TYPE:Ljava/lang/Class;
+  0486  op32                  
+  048a  op08                  
+  048c  op00                  
+  048e  op02                  
+  0490  op0c                  
+  0492  op02                  
+  0494  op0d                  
+  0496  op08                  
+  0498  op0e                  
+  049a  op07                  
+  049c  op29                  
+  04a0  invoke-virtual          -> Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
+  04a6  op0c                  
+  04a8  op21                  
+  04aa  op39                  
+  04ae  op28                  
+  04b0  invoke-virtual          -> Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+  04b6  op0c                  
+  04b8  const-string            -> 'setDiffNewData'
+  04bc  invoke-virtual          -> Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  04c2  op0a                  
+  04c4  op38                  
+  04ca  op12                  
+  04cc  op32                  
+  04d0  op28                  
+  04d2  op0d                  
+  04d4  op12                  
+  04d6  op29                  
+  04da  op12                  
+  04dc  op21                  
+  04de  opb1                  
+  04e2  ope9                  
+  04e4  op02                  
+  04e6  op0c                  
+  04e8  op46                  
+  04ec  invoke-virtual          -> Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+  04f2  op0a                  
+  04f4  op46                  
+  04f8  const-class             -> Ljava/lang/Object;
+  04fc  op33                  
+  0500  op13                  
+  0502  op01                  
+  0504  op28                  
+  0506  op13                  
+  0508  op00                  
+  050a  op39                  
+  050e  op39                  
+  0512  op08                  
+  0514  op00                  
+  0516  op02                  
+  0518  op0d                  
+  051a  op08                  
+  051c  op0e                  
+  051e  op07                  
+  0520  op02                  
+  0522  op10                  
+  0524  op28                  
+  0526  sget-object             -> Ldev/local/newsoul/j;->g:Lio/github/libxposed/api/XposedModule;
+  052a  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0530  op0c                  
+  0532  invoke-virtual          -> Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+  0538  op0c                  
+  053a  op02                  
+  053c  op0d                  
+  053e  new-instance            -> Ljava/lang/StringBuilder;
+  0542  invoke-direct           -> Ljava/lang/StringBuilder;-><init>()V
+  0548  op08                  
+  054a  op0e                  
+  054c  const-string            -> 'new-soul/feed-data/'
+  0550  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  0556  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  055c  const-string            -> '/'
+  0560  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  0566  invoke-virtual          -> Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  056c  invoke-virtual          -> Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  0572  op0c                  
+  0574  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  057a  op0c                  
+  057c  sget-object             -> Lio/github/libxposed/api/XposedInterface$ExceptionMode;->PROTECTIVE:Lio/github/libxposed/api/XposedInterface$ExceptionMode;
+  0580  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0586  op0c                  
+  0588  new-instance            -> Ldev/local/newsoul/c;
+  058c  op02                  
+  058e  op10                  
+  0590  op07                  
+  0592  op02                  
+  0594  op11                  
+  0596  op07                  
+  0598  op08                  
+  059a  op00                  
+  059c  op07                  
+  059e  op08                  
+  05a0  op12                  
+  05a2  op01                  
+  05a4  op07                  
+  05a6  op01                  
+  05a8  op08                  
+  05aa  op14                  
+  05ae  op15                  
+  05b2  op02                  
+  05b4  invoke-direct/range     -> Ldev/local/newsoul/c;-><init>(Ljava/lang/Class;IZLjava/lang/Class;Ljava/lang/Class;Ljava/lang/reflect/Method;Z)V
+  05ba  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  05c0  op12                  
+  05c2  opb0                  
+  05c6  op0d                  
+  05c8  op28                  
+  05ca  op12                  
+  05cc  opd8                  
+  05d0  op07                  
+  05d2  op02                  
+  05d4  const-class             -> None
+  05d8  op1d                  
+  05da  op08                  
+  05dc  op1e                  
+  05de  op12                  
+  05e0  op12                  
+  05e2  op01                  
+  05e4  op12                  
+  05e6  op29                  
+  05ea  op38                  
+  05f0  opa4                  
+  05f4  new-instance            -> Ljava/lang/StringBuilder;
+  05f8  invoke-direct           -> Ljava/lang/StringBuilder;-><init>()V
+  05fe  const-string            -> 'feed data filter installed; methods='
+  0602  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  0608  invoke-virtual          -> Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  060e  invoke-virtual          -> Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  0614  op0c                  
+  0616  invoke-static           -> Ldev/local/newsoul/j;->e(Ljava/lang/String;)V
+  061c  op28                  
+  061e  new-instance            -> Ljava/lang/IllegalStateException;
+  0622  const-string            -> 'no adapter mutation methods'
+  0626  invoke-direct           -> Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+  062c  op27                  
+  062e  const-string            -> 'feed data filter'
+  0632  invoke-static           -> Ldev/local/newsoul/j;->c(Ljava/lang/String;Ljava/lang/Throwable;)V
+  0638  const-string            -> 'fa.a'
+  063c  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0642  op0c                  
+  0644  op12                  
+  0646  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  064c  op0c                  
+  064e  sput-object             -> Ldev/local/newsoul/j;->f:Ljava/lang/reflect/Method;
+  0652  const-string            -> 'jb.e'
+  0656  const-string            -> 'e'
+  065a  invoke-static           -> Ldev/local/newsoul/j;->h(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+  0660  const-string            -> 'mb.d'
+  0664  const-string            -> 'f'
+  0668  invoke-static           -> Ldev/local/newsoul/j;->h(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+  066e  const-string            -> 'lb.h'
+  0672  const-string            -> 'c'
+  0676  invoke-static           -> Ldev/local/newsoul/j;->h(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+  067c  op28                  
+  067e  op0d                  
+  0680  const-string            -> 'request hooks'
+  0684  invoke-static           -> Ldev/local/newsoul/j;->c(Ljava/lang/String;Ljava/lang/Throwable;)V
+  068a  const-string            -> 'cn.soulapp.android.ad.soulad.ad.views.express.render.PostFeedExpressComponent'
+  068e  op24                  
+  0694  op0c                  
+  0696  const-string            -> 'cn.soulapp.android.ad.soulad.ad.views.express.render.PostDetailExpressView'
+  069a  const-string            -> 'ad_detail'
+  069e  op24                  
+  06a4  op0c                  
+  06a6  const-string            -> 'cn.soulapp.android.ad.soulad.ad.views.express.render.FeedDrawExpressView'
+  06aa  const-string            -> 'ad_video'
+  06ae  op24                  
+  06b4  op0c                  
+  06b6  const-string            -> 'cn.soulapp.android.ad.soulad.ad.views.express.render.TagBannerExpressView'
+  06ba  const-string            -> 'ad_tag'
+  06be  op24                  
+  06c4  op0c                  
+  06c6  const-string            -> 'cn.soulapp.android.ad.soulad.ad.views.express.render.FeedWebExpressView'
+  06ca  const-string            -> 'ad_tag_web'
+  06ce  op24                  
+  06d4  op0c                  
+  06d6  const-string            -> 'cn.soulapp.android.ad.soulad.ad.views.express.render.GroupBannerExpressView'
+  06da  const-string            -> 'ad_group'
+  06de  op24                  
+  06e4  op0c                  
+  06e6  const-string            -> 'cn.soulapp.android.ad.soulad.ad.views.express.render.PlantGameExpressView'
+  06ea  const-string            -> 'ad_planet'
+  06ee  op24                  
+  06f4  op0c                  
+  06f6  const-string            -> 'cn.soulapp.android.ad.soulad.ad.views.express.render.PlantGameTagExpressView'
+  06fa  op24                  
+  0700  op0c                  
+  0702  const-string            -> 'cn.soulapp.android.ad.soulad.ad.views.express.render.MeCellExpressView'
+  0706  const-string            -> 'ad_me'
+  070a  op24                  
+  0710  op0c                  
+  0712  const-string            -> 'cn.soulapp.android.ad.soulad.ad.views.express.render.EnvelopeMessageFeedExpressView'
+  0716  const-string            -> 'ad_envelope'
+  071a  op24                  
+  0720  op0c                  
+  0722  const-string            -> 'cn.soulapp.android.ad.soulad.ad.views.express.render.SystemNoticeFeedExpressView'
+  0726  const-string            -> 'ad_notice'
+  072a  op24                  
+  0730  op0c                  
+  0732  const-string            -> 'cn.soulapp.android.ad.base.view.SearchBannerAdView'
+  0736  const-string            -> 'ad_search'
+  073a  op24                  
+  0740  op0c                  
+  0742  const-string            -> 'cn.soulapp.android.ad.base.view.FloatAdView'
+  0746  const-string            -> 'ad_float'
+  074a  op24                  
+  0750  op0c                  
+  0752  const-string            -> 'cn.soulapp.android.ad.base.view.FloatAdViewV2'
+  0756  op24                  
+  075c  op0c                  
+  075e  const-string            -> 'cn.soulapp.android.ad.base.view.DraggableFloatAdView'
+  0762  op24                  
+  0768  op0c                  
+  076a  const-string            -> 'cn.soulapp.android.ad.base.view.FloatEntranceView'
+  076e  op24                  
+  0774  op0c                  
+  0776  op25                  
+  077c  op0c                  
+  077e  op12                  
+  0780  const-class             -> Landroid/view/View;
+  0784  op13                  
+  0786  op10                  
+  0788  op35                  
+  078e  op03                  
+  0790  op12                  
+  0792  op46                  
+  0796  op12                  
+  0798  op46                  
+  079c  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  07a2  op0c                  
+  07a4  invoke-virtual          -> Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+  07aa  op0a                  
+  07ac  op38                  
+  07b2  op96                  
+  07b6  op0c                  
+  07b8  op21                  
+  07ba  op12                  
+  07bc  op35                  
+  07c2  op00                  
+  07c4  sget-object             -> Ldev/local/newsoul/j;->g:Lio/github/libxposed/api/XposedModule;
+  07c8  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  07ce  op0c                  
+  07d0  sget-object             -> Lio/github/libxposed/api/XposedInterface$ExceptionMode;->PROTECTIVE:Lio/github/libxposed/api/XposedInterface$ExceptionMode;
+  07d4  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  07da  op0c                  
+  07dc  new-instance            -> Ldev/local/newsoul/f;
+  07e0  op12                  
+  07e2  invoke-direct           -> Ldev/local/newsoul/f;-><init>(ILjava/lang/Object;)V
+  07e8  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  07ee  op12                  
+  07f0  opb0                  
+  07f4  op0d                  
+  07f6  op28                  
+  07f8  invoke-interface        -> Ljava/util/Set;->add(Ljava/lang/Object;)Z
+  07fe  op12                  
+  0800  op28                  
+  0802  new-instance            -> Ljava/lang/IllegalStateException;
+  0806  const-string            -> 'not a View'
+  080a  invoke-direct           -> Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+  0810  op27                  
+  0812  invoke-static           -> Ldev/local/newsoul/j;->c(Ljava/lang/String;Ljava/lang/Throwable;)V
+  0818  op28                  
+  081a  opb0                  
+  081e  op12                  
+  0820  const-string            -> 'cn.soulapp.android.component.square.main.ad.AdPostViewHolder'
+  0824  op12                  
+  0826  invoke-static           -> Ldev/local/newsoul/j;->g(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Z)V
+  082c  const-string            -> 'cn.soulapp.android.component.square.main.ad.AdExpressViewHolder'
+  0830  invoke-static           -> Ldev/local/newsoul/j;->g(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Z)V
+  0836  const-string            -> 'pi.k'
+  083a  const-string            -> 'ad_conversation'
+  083e  invoke-static           -> Ldev/local/newsoul/j;->g(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Z)V
+  0844  const-string            -> 'cn.soulapp.android.component.square.video.adapter.a'
+  0848  invoke-static           -> Ldev/local/newsoul/j;->g(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Z)V
+  084e  const-string            -> 'cn.soulapp.android.ad.dialog.InterstitialAdDialog'
+  0852  invoke-static           -> Ldev/local/newsoul/j;->f(Ljava/lang/ClassLoader;Ljava/lang/String;)V
+  0858  const-string            -> 'cn.soulapp.android.ad.dialog.InterstitialAdBottomDialog'
+  085c  invoke-static           -> Ldev/local/newsoul/j;->f(Ljava/lang/ClassLoader;Ljava/lang/String;)V
+  0862  sget-object             -> Ldev/local/newsoul/j;->g:Lio/github/libxposed/api/XposedModule;
+  0866  const-string            -> 'setVisibility'
+  086a  sget-object             -> Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+  086e  op24                  
+  0874  op0c                  
+  0876  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  087c  op0c                  
+  087e  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0884  op0c                  
+  0886  sget-object             -> Lio/github/libxposed/api/XposedInterface$ExceptionMode;->PROTECTIVE:Lio/github/libxposed/api/XposedInterface$ExceptionMode;
+  088a  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0890  op0c                  
+  0892  new-instance            -> Ldev/local/newsoul/a;
+  0896  op12                  
+  0898  invoke-direct           -> Ldev/local/newsoul/a;-><init>(I)V
+  089e  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  08a4  op28                  
+  08a6  op0d                  
+  08a8  const-string            -> 'view visibility'
+  08ac  invoke-static           -> Ldev/local/newsoul/j;->c(Ljava/lang/String;Ljava/lang/Throwable;)V
+  08b2  invoke-interface        -> Ljava/util/Set;->size()I
+  08b8  op0a                  
+  08ba  new-instance            -> Ljava/lang/StringBuilder;
+  08be  const-string            -> 'ad controls installed; ready='
+  08c2  invoke-direct           -> Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  08c8  invoke-virtual          -> Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  08ce  const-string            -> '/18 (excluding splash)'
+  08d2  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  08d8  invoke-virtual          -> Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  08de  op0c                  
+  08e0  invoke-static           -> Ldev/local/newsoul/j;->e(Ljava/lang/String;)V
+  08e6  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  08ec  op0c                  
+  08ee  const-string            -> 'chat games installed; dice='
+  08f2  sput-object             -> Ldev/local/newsoul/t;->f:Lio/github/libxposed/api/XposedModule;
+  08f6  const-string            -> 'cn.soulapp.imlib.msg.chat.DiceFingerMsg'
+  08fa  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0900  op0c                  
+  0902  sget-object             -> Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+  0906  op24                  
+  090c  op0c                  
+  090e  invoke-virtual          -> Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+  0914  op0c                  
+  0916  sput-object             -> Ldev/local/newsoul/t;->h:Ljava/lang/reflect/Constructor;
+  091a  const-string            -> 'number'
+  091e  invoke-virtual          -> Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  0924  op0c                  
+  0926  sput-object             -> Ldev/local/newsoul/t;->i:Ljava/lang/reflect/Field;
+  092a  sget-object             -> Ldev/local/newsoul/t;->f:Lio/github/libxposed/api/XposedModule;
+  092e  sget-object             -> Ldev/local/newsoul/t;->h:Ljava/lang/reflect/Constructor;
+  0932  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0938  op0c                  
+  093a  const-string            -> 'new-soul/game-message-result'
+  093e  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0944  op0c                  
+  0946  sget-object             -> Lio/github/libxposed/api/XposedInterface$ExceptionMode;->PROTECTIVE:Lio/github/libxposed/api/XposedInterface$ExceptionMode;
+  094a  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0950  op0c                  
+  0952  new-instance            -> Ldev/local/newsoul/a;
+  0956  op12                  
+  0958  invoke-direct           -> Ldev/local/newsoul/a;-><init>(I)V
+  095e  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  0964  const-string            -> 'cn.soulapp.android.component.chat.utils.y4'
+  0968  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  096e  op0c                  
+  0970  const-string            -> 'a'
+  0974  invoke-virtual          -> Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  097a  op0c                  
+  097c  op12                  
+  097e  invoke-virtual          -> Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+  0984  const-string            -> 'w0'
+  0988  invoke-static           -> Ldev/local/newsoul/t;->a(Ljava/lang/Class;Ljava/lang/reflect/Field;Ljava/lang/String;Z)Z
+  098e  op0a                  
+  0990  op6a                    -> Ldev/local/newsoul/t;->a:Z
+  0994  const-string            -> 'h1'
+  0998  op12                  
+  099a  invoke-static           -> Ldev/local/newsoul/t;->a(Ljava/lang/Class;Ljava/lang/reflect/Field;Ljava/lang/String;Z)Z
+  09a0  op0a                  
+  09a2  op6a                    -> Ldev/local/newsoul/t;->b:Z
+  09a6  op63                    -> Ldev/local/newsoul/t;->a:Z
+  09aa  new-instance            -> Ljava/lang/StringBuilder;
+  09ae  invoke-direct           -> Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  09b4  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+  09ba  const-string            -> ' finger='
+  09be  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  09c4  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+  09ca  invoke-virtual          -> Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  09d0  op0c                  
+  09d2  const-string            -> 'SoulHook102'
+  09d6  invoke-static           -> Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+  09dc  sget-object             -> Ldev/local/newsoul/t;->f:Lio/github/libxposed/api/XposedModule;
+  09e0  op12                  
+  09e2  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;)V
+  09e8  op28                  
+  09ea  op0d                  
+  09ec  sget-object             -> Ldev/local/newsoul/t;->f:Lio/github/libxposed/api/XposedModule;
+  09f0  const-string            -> 'SoulHook102'
+  09f4  const-string            -> 'chat games unavailable'
+  09f8  op12                  
+  09fa  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+  0a00  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0a06  op0c                  
+  0a08  const-string            -> 'SoulHook102'
+  0a0c  const-class             -> Ljava/lang/String;
+  0a10  const-string            -> 'cn.soulapp.imlib.msg.ImMessage'
+  0a14  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0a1a  op0c                  
+  0a1c  const-string            -> 'cn.soulapp.imlib.msg.chat.ChatMessage'
+  0a20  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0a26  op0c                  
+  0a28  const-string            -> 'cn.soulapp.imlib.ChatManager'
+  0a2c  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0a32  op0c                  
+  0a34  const-string            -> 'lf.b'
+  0a38  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0a3e  op0c                  
+  0a40  const-string            -> 'b'
+  0a44  op12                  
+  0a46  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0a4c  op0c                  
+  0a4e  sput-object             -> Ldev/local/newsoul/Q0;->l:Ljava/lang/reflect/Method;
+  0a52  const-string            -> 'cn.soulapp.imlib.j0'
+  0a56  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0a5c  op0c                  
+  0a5e  const-string            -> 'g'
+  0a62  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0a68  op0c                  
+  0a6a  sput-object             -> Ldev/local/newsoul/Q0;->m:Ljava/lang/reflect/Method;
+  0a6e  const-string            -> 'getChatMessage'
+  0a72  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0a78  op0c                  
+  0a7a  sput-object             -> Ldev/local/newsoul/Q0;->n:Ljava/lang/reflect/Method;
+  0a7e  const-string            -> 'getFrom'
+  0a82  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0a88  op0c                  
+  0a8a  sput-object             -> Ldev/local/newsoul/Q0;->p:Ljava/lang/reflect/Method;
+  0a8e  const-string            -> 'getTo'
+  0a92  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0a98  op0c                  
+  0a9a  sput-object             -> Ldev/local/newsoul/Q0;->q:Ljava/lang/reflect/Method;
+  0a9e  const-string            -> 'getMsgId'
+  0aa2  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0aa8  op0c                  
+  0aaa  sput-object             -> Ldev/local/newsoul/Q0;->r:Ljava/lang/reflect/Method;
+  0aae  const-string            -> 'isAnonymityChat'
+  0ab2  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0ab8  op0c                  
+  0aba  sput-object             -> Ldev/local/newsoul/Q0;->s:Ljava/lang/reflect/Method;
+  0abe  const-string            -> 'getMsgType'
+  0ac2  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0ac8  op0c                  
+  0aca  sput-object             -> Ldev/local/newsoul/Q0;->o:Ljava/lang/reflect/Method;
+  0ace  const-string            -> 'getMsgContent'
+  0ad2  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0ad8  op0c                  
+  0ada  sput-object             -> Ldev/local/newsoul/Q0;->t:Ljava/lang/reflect/Method;
+  0ade  const-string            -> 'getStringTransExt'
+  0ae2  op24                  
+  0ae8  op0c                  
+  0aea  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0af0  op0c                  
+  0af2  sput-object             -> Ldev/local/newsoul/Q0;->u:Ljava/lang/reflect/Method;
+  0af6  const-string            -> 'M'
+  0afa  op12                  
+  0afc  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0b02  const-string            -> 'F'
+  0b06  op24                  
+  0b0c  op0c                  
+  0b0e  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0b14  op0c                  
+  0b16  sput-object             -> Ldev/local/newsoul/Q0;->v:Ljava/lang/reflect/Method;
+  0b1a  const-string            -> 'cn.soulapp.imlib.Conversation'
+  0b1e  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0b24  op0c                  
+  0b26  const-string            -> 'getMessage'
+  0b2a  op24                  
+  0b30  op0c                  
+  0b32  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0b38  op0c                  
+  0b3a  sput-object             -> Ldev/local/newsoul/Q0;->w:Ljava/lang/reflect/Method;
+  0b3e  const-string            -> 'K'
+  0b42  op24                  
+  0b48  op0c                  
+  0b4a  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0b50  op0c                  
+  0b52  sput-object             -> Ldev/local/newsoul/Q0;->x:Ljava/lang/reflect/Method;
+  0b56  const-string            -> 'cn.soulapp.imlib.i0'
+  0b5a  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0b60  op0c                  
+  0b62  const-string            -> 'v'
+  0b66  op12                  
+  0b68  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0b6e  op0c                  
+  0b70  sput-object             -> Ldev/local/newsoul/Q0;->y:Ljava/lang/reflect/Method;
+  0b74  const-string            -> 'w'
+  0b78  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0b7e  op0c                  
+  0b80  sput-object             -> Ldev/local/newsoul/Q0;->z:Ljava/lang/reflect/Method;
+  0b84  const-string            -> 'cn.soulapp.imlib.listener.MsgListener'
+  0b88  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0b8e  op0c                  
+  0b90  const-string            -> 'onRefreshUi'
+  0b94  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0b9a  op0c                  
+  0b9c  sput-object             -> Ldev/local/newsoul/Q0;->A:Ljava/lang/reflect/Method;
+  0ba0  invoke-static           -> Ldev/local/newsoul/Q0;->K(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;Ljava/lang/Class;)V
+  0ba6  const-string            -> 'O'
+  0baa  const-class             -> Ljava/util/List;
+  0bae  op24                  
+  0bb4  op0c                  
+  0bb6  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0bbc  op0c                  
+  0bbe  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0bc4  op0c                  
+  0bc6  const-string            -> 'new-soul/chat-anti-recall'
+  0bca  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0bd0  op0c                  
+  0bd2  sget-object             -> Lio/github/libxposed/api/XposedInterface$ExceptionMode;->PROTECTIVE:Lio/github/libxposed/api/XposedInterface$ExceptionMode;
+  0bd6  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0bdc  op0c                  
+  0bde  new-instance            -> Ldev/local/newsoul/a;
+  0be2  op13                  
+  0be4  op09                  
+  0be6  invoke-direct           -> Ldev/local/newsoul/a;-><init>(I)V
+  0bec  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  0bf2  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->deoptimize(Ljava/lang/reflect/Executable;)Z
+  0bf8  const-string            -> 'cn.soulapp.imlib.handler.RoamHandler'
+  0bfc  invoke-virtual          -> Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+  0c02  op0c                  
+  0c04  const-string            -> 'a'
+  0c08  op24                  
+  0c0e  op0c                  
+  0c10  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0c16  op0c                  
+  0c18  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0c1e  op0c                  
+  0c20  const-string            -> 'new-soul/chat-anti-recall-roam'
+  0c24  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0c2a  op0c                  
+  0c2c  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0c32  op0c                  
+  0c34  new-instance            -> Ldev/local/newsoul/a;
+  0c38  op13                  
+  0c3a  op0a                  
+  0c3c  invoke-direct           -> Ldev/local/newsoul/a;-><init>(I)V
+  0c42  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  0c48  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->deoptimize(Ljava/lang/reflect/Executable;)Z
+  0c4e  op12                  
+  0c50  op6a                    -> Ldev/local/newsoul/Q0;->k:Z
+  0c54  const-string            -> 'private chat anti-recall hooks installed'
+  0c58  invoke-static           -> Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+  0c5e  op28                  
+  0c60  op0d                  
+  0c62  const-string            -> 'private chat anti-recall unavailable'
+  0c66  op12                  
+  0c68  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+  0c6e  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0c74  op0c                  
+  0c76  invoke-static           -> Ldev/local/newsoul/g1;->a(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0c7c  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0c82  op0c                  
+  0c84  invoke-static           -> Ldev/local/newsoul/Q0;->x(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0c8a  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0c90  op0c                  
+  0c92  new-instance            -> Ldev/local/newsoul/F;
+  0c96  invoke-direct           -> Ldev/local/newsoul/F;-><init>()V
+  0c9c  invoke-virtual          -> Ldev/local/newsoul/F;->h(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0ca2  op28                  
+  0ca4  op0d                  
+  0ca6  const-string            -> 'repeat'
+  0caa  invoke-static           -> Ldev/local/newsoul/V;->i(Ljava/lang/String;Ljava/lang/Throwable;)V
+  0cb0  const-string            -> 'SoulHook102'
+  0cb4  const-string            -> 'repeat unavailable'
+  0cb8  invoke-static           -> Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+  0cbe  op12                  
+  0cc0  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;)V
+  0cc6  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0ccc  op0c                  
+  0cce  invoke-static           -> Ldev/local/newsoul/Q0;->z(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0cd4  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0cda  op0c                  
+  0cdc  invoke-static           -> Ldev/local/newsoul/Q0;->E(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0ce2  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0ce8  op0c                  
+  0cea  invoke-static           -> Ldev/local/newsoul/Q0;->D(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0cf0  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0cf6  op0c                  
+  0cf8  invoke-static           -> Ldev/local/newsoul/Q0;->A(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0cfe  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0d04  op0c                  
+  0d06  invoke-static           -> Ldev/local/newsoul/Q0;->B(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0d0c  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0d12  op0c                  
+  0d14  invoke-static           -> Ldev/local/newsoul/Q0;->C(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0d1a  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0d20  op0c                  
+  0d22  invoke-static           -> Ldev/local/newsoul/u1;->g(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0d28  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0d2e  op0c                  
+  0d30  invoke-static           -> Ldev/local/newsoul/p0;->e(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0d36  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0d3c  op0c                  
+  0d3e  invoke-static           -> Ldev/local/newsoul/B2;->c(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0d44  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0d4a  op0c                  
+  0d4c  invoke-static           -> Ldev/local/newsoul/Q0;->F(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0d52  sput-object             -> Ldev/local/newsoul/S;->a:Lio/github/libxposed/api/XposedModule;
+  0d56  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0d5c  op0c                  
+  0d5e  invoke-static           -> Ldev/local/newsoul/o;->c(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+  0d64  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0d6a  const-class             -> Landroid/app/Activity;
+  0d6e  const-string            -> 'onResume'
+  0d72  op12                  
+  0d74  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0d7a  op0c                  
+  0d7c  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0d82  op0c                  
+  0d84  const-string            -> 'soul-demo/activity-onResume'
+  0d88  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0d8e  op0c                  
+  0d90  sget-object             -> Lio/github/libxposed/api/XposedInterface$ExceptionMode;->PROTECTIVE:Lio/github/libxposed/api/XposedInterface$ExceptionMode;
+  0d94  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0d9a  op0c                  
+  0d9c  new-instance            -> Ldev/local/newsoul/x2;
+  0da0  op12                  
+  0da2  invoke-direct           -> Ldev/local/newsoul/x2;-><init>(Ldev/local/newsoul/SoulHook;I)V
+  0da8  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  0dae  op12                  
+  0db0  op5c                    -> Ldev/local/newsoul/SoulHook;->installed:Z
+  0db4  const-string            -> 'hook installed: android.app.Activity.onResume'
+  0db8  invoke-direct           -> Ldev/local/newsoul/SoulHook;->info(Ljava/lang/String;)V
+  0dbe  invoke-interface/range  -> Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;->getClassLoader()Ljava/lang/ClassLoader;
+  0dc4  op0c                  
+  0dc6  invoke-direct           -> Ldev/local/newsoul/SoulHook;->installSettingsHook(Ljava/lang/ClassLoader;)V
+  0dcc  op28                  
+  0dce  op0d                  
+  0dd0  const-string            -> 'SoulHook102'
+  0dd4  const-string            -> 'hook installation failed'
+  0dd8  invoke-static           -> Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  0dde  const-string            -> 'SoulHook102'
+  0de2  const-string            -> 'hook installation failed'
+  0de6  op12                  
+  0de8  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+  0dee  op0e                  
+  0df0  op1e                  
+  0df2  op27                  
+  0df4  op0e                  

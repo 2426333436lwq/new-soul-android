@@ -1,0 +1,571 @@
+﻿=== COUNTS ===
+classes=216 methods=1766 fields=1010 types=563 strings=3025 protos=699
+
+=== CLASSES IMPLEMENTING XposedInterface$Hooker ===
+
+Ldev/local/newsoul/B;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ljava/lang/reflect/Field; b
+    field Ljava/lang/reflect/Field; c
+    method <init>(Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, I) -> V  code=0x104d4
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x10320
+
+Ldev/local/newsoul/C;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ldev/local/newsoul/F; b
+    method <init>(Ldev/local/newsoul/F;, I) -> V  code=0x1082c
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x104f8
+
+Ldev/local/newsoul/D;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ljava/lang/Object; b
+    field Ljava/lang/Object; c
+    method <init>(Ljava/lang/Object;, Ljava/lang/Object;, I) -> V  code=0x10c80
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x1084c
+
+Ldev/local/newsoul/N2;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ldev/local/newsoul/d3; b
+    method <init>(Ldev/local/newsoul/d3;, I) -> V  code=0x2f5f0
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x2f528
+
+Ldev/local/newsoul/X0;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ljava/lang/reflect/Method; b
+    field Ljava/lang/String; c
+    field Lio/github/libxposed/api/XposedModule; d
+    field I e
+    method <init>(I, Ljava/lang/reflect/Method;, Ljava/lang/String;, Lio/github/libxposed/api/XposedModule;, I) -> V  code=0x1e4c8
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x1e3d4
+
+Ldev/local/newsoul/a1;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ldev/local/newsoul/d1; b
+    method <init>(Ldev/local/newsoul/d1;, I) -> V  code=0x20ad8
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x206b0
+
+Ldev/local/newsoul/a;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    method <init>(I) -> V  code=0xd638
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0xcb04
+
+Ldev/local/newsoul/b;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ljava/lang/reflect/Field; b
+    field Ljava/lang/reflect/Field; c
+    field Ljava/lang/reflect/Field; d
+    field Ljava/lang/reflect/Method; e
+    method <init>(Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Method;, I) -> V  code=0xd924
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0xd654
+
+Ldev/local/newsoul/c;  super=Ljava/lang/Object;  access=0x1011
+    field Ljava/lang/Class; a
+    field I b
+    field Z c
+    field Ljava/lang/Class; d
+    field Ljava/lang/Class; e
+    field Ljava/lang/reflect/Method; f
+    field Z g
+    method <init>(Ljava/lang/Class;, I, Z, Ljava/lang/Class;, Ljava/lang/Class;, Ljava/lang/reflect/Method;, Z) -> V  code=0xdb60
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0xd950
+
+Ldev/local/newsoul/d;  super=Ljava/lang/Object;  access=0x1011
+    field Z a
+    field Ljava/lang/String; b
+    method <init>(Ljava/lang/String;, Z) -> V  code=0xdc58
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0xdb94
+
+Ldev/local/newsoul/e;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ljava/lang/reflect/AccessibleObject; b
+    field Ljava/lang/Object; c
+    field Ljava/lang/reflect/AnnotatedElement; d
+    method <init>(Ljava/lang/reflect/AnnotatedElement;, Ljava/lang/reflect/AccessibleObject;, Ljava/lang/Object;, I) -> V  code=0xdf20
+    method <init>(Ljava/lang/reflect/Method;, Ljava/lang/reflect/Method;, Ljava/lang/reflect/Method;) -> V  code=0xdf48
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0xdc78
+
+Ldev/local/newsoul/f1;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ljava/lang/reflect/AccessibleObject; b
+    field Ljava/lang/reflect/AccessibleObject; c
+    field Ljava/lang/reflect/AccessibleObject; d
+    field Ljava/lang/reflect/Executable; e
+    method <init>(Ljava/lang/reflect/AccessibleObject;, Ljava/lang/reflect/AccessibleObject;, Ljava/lang/reflect/AccessibleObject;, Ljava/lang/reflect/Executable;, I) -> V  code=0x22108
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x21e68
+
+Ldev/local/newsoul/f;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ljava/lang/Object; b
+    method <init>(I, Ljava/lang/Object;) -> V  code=0xe098
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0xdf74
+
+Ldev/local/newsoul/k1;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ljava/lang/reflect/Field; b
+    method <init>(Ljava/lang/reflect/Field;, I) -> V  code=0x2274c
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x225c0
+
+Ldev/local/newsoul/l0;  super=Ljava/lang/Object;  access=0x1011
+    field Ljava/lang/reflect/Field; a
+    field Ljava/lang/reflect/Field; b
+    field Ljava/lang/reflect/Field; c
+    field Ljava/lang/reflect/Field; d
+    field Ljava/lang/reflect/Field; e
+    field Ljava/lang/reflect/Field; f
+    field Ljava/lang/reflect/Field; g
+    method <init>(Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;) -> V  code=0x15dc0
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x15c84
+
+Ldev/local/newsoul/m0;  super=Ljava/lang/Object;  access=0x1011
+    field Z a
+    field Ljava/lang/reflect/Method; b
+    field Ljava/lang/String; c
+    field Ljava/lang/reflect/Field; d
+    field Ljava/lang/reflect/Field; e
+    field Ljava/lang/reflect/Field; f
+    field Ljava/lang/reflect/Field; g
+    field Ljava/lang/reflect/Field; h
+    field Ljava/lang/reflect/Field; i
+    method <init>(Z, Ljava/lang/reflect/Method;, Ljava/lang/String;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;) -> V  code=0x15f8c
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x15df4
+
+Ldev/local/newsoul/n0;  super=Ljava/lang/Object;  access=0x1011
+    field Z a
+    field Ljava/lang/reflect/Method; b
+    field Ljava/lang/reflect/Field; c
+    field Ljava/lang/reflect/Field; d
+    field Ljava/lang/reflect/Field; e
+    field Ljava/lang/String; f
+    method <init>(Z, Ljava/lang/reflect/Method;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/String;) -> V  code=0x16138
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x15fc8
+
+Ldev/local/newsoul/p;  super=Ljava/lang/Object;  access=0x1011
+    field Ljava/lang/reflect/Field; a
+    field Z b
+    field Ljava/lang/reflect/Method; c
+    method <init>(Ljava/lang/reflect/Field;, Z, Ljava/lang/reflect/Method;) -> V  code=0xf8f8
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0xf820
+
+Ldev/local/newsoul/s1;  super=Ljava/lang/Object;  access=0x1011
+    field Ljava/lang/reflect/Field; a
+    field Ljava/lang/reflect/Field; b
+    field Ljava/lang/reflect/Field; c
+    field Ljava/lang/reflect/Constructor; d
+    field Ljava/lang/reflect/Field; e
+    field Ljava/lang/reflect/Field; f
+    field Ljava/lang/reflect/Field; g
+    field Ljava/lang/reflect/Field; h
+    field Ljava/lang/reflect/Field; i
+    method <init>(Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Constructor;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;, Ljava/lang/reflect/Field;) -> V  code=0x23f48
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x23ca8
+
+Ldev/local/newsoul/v;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Z b
+    field Ljava/lang/String; c
+    field I d
+    method <init>(I, Z, Ljava/lang/String;, I) -> V  code=0xffd4
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0xfde8
+
+Ldev/local/newsoul/x2;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ldev/local/newsoul/SoulHook; b
+    method <init>(Ldev/local/newsoul/SoulHook;, I) -> V  code=0x2b85c
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x2b818
+
+Ldev/local/newsoul/y2;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Lio/github/libxposed/api/XposedModule; b
+    method <init>(Lio/github/libxposed/api/XposedModule;, I) -> V  code=0x2cc5c
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x2cbd0
+
+Ldev/local/newsoul/z2;  super=Ljava/lang/Object;  access=0x1011
+    field I a
+    field Ljava/lang/Class; b
+    method <init>(Ljava/lang/Class;, I) -> V  code=0x2cdb4
+    method intercept(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x2cc7c
+
+[hooker count = 23]
+
+
+=== ENTRY CLASS SoulHook ===
+super=Lio/github/libxposed/api/XposedModule; access=0x11 source=SourceFile
+    field Ljava/lang/String; TAG
+    field Ljava/lang/String; TARGET
+    field Z settingsHookReady
+    field Z installed
+    field Z targetProcess
+    field Ljava/util/concurrent/atomic/AtomicBoolean; toastShown
+    method <init>() -> V  code=0x2b9fc
+    method a(Landroid/app/Activity;) -> V  code=0x2b9e4
+    method b(Ldev/local/newsoul/SoulHook;, Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x2b87c
+    method c(Ldev/local/newsoul/SoulHook;, Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x2b898
+    method info(Ljava/lang/String;) -> V  code=0x2ba24
+    method installSettingsHook(Ljava/lang/ClassLoader;) -> V  code=0x2ba48
+    method lambda$installSettingsHook$1(Landroid/app/Activity;) -> V  code=0x2bb0c
+    method lambda$installSettingsHook$2(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x2b8b4
+    method lambda$onPackageReady$0(Lio/github/libxposed/api/XposedInterface$Chain;) -> Ljava/lang/Object;  code=0x2b908
+    method onModuleLoaded(Lio/github/libxposed/api/XposedModuleInterface$ModuleLoadedParam;) -> V  code=0x2bc7c
+    method onPackageReady(Lio/github/libxposed/api/XposedModuleInterface$PackageReadyParam;) -> V  code=0x2bd1c
+
+
+=== TYPES REFERENCING cn.soulapp / soul ===
+    Ldev/local/newsoul/SoulHook;
+
+
+=== STRING CONSTANTS BY BUCKET ===
+
+--- URL / ENDPOINT (53) ---
+    "(()=>{if(location.origin!=='https://app.soulapp.cn'||location.pathname!='/setting/'||!document.body)return false;const want='"
+    'cn.soulapp.android.client.component.middle.platform.model.api.user.ImUserBean'
+    'cn.soulapp.android.client.component.middle.platform.utils.m2'
+    'cn.soulapp.android.component.chat.SelectConversationActivity'
+    'cn.soulapp.android.component.chat.adapter.ConversationAdapter'
+    'cn.soulapp.android.component.chat.bean.SocialGraceScoreBean'
+    'cn.soulapp.android.component.chat.dialog.LimitGiftDialog$OnStartGiftSendListener'
+    'cn.soulapp.android.component.chat.dialog.j1'
+    'cn.soulapp.android.component.chat.fragment.ConversationFragment'
+    'cn.soulapp.android.component.chat.fragment.ConversationFragment$d1'
+    'cn.soulapp.android.component.chat.helper.MsgLimitManager'
+    'cn.soulapp.android.component.chat.helper.WithDrawHandler'
+    'cn.soulapp.android.component.chat.limitdialog.RewardAdHelper'
+    'cn.soulapp.android.component.chat.snapchat.PrivacyProtectPreviewActivity'
+    'cn.soulapp.android.component.chat.snapchat.SnapChatActivity'
+    'cn.soulapp.android.component.chat.style.BaseConversationStyleProcess'
+    'cn.soulapp.android.component.chat.utils.ChatUtils'
+    'cn.soulapp.android.component.chat.utils.u0'
+    'cn.soulapp.android.component.chat.utils.y4'
+    'cn.soulapp.android.component.chat.widget.AbsChatDualItem'
+    'cn.soulapp.android.component.chat.window.ChatLongClickPopUp'
+    'cn.soulapp.android.component.chat.window.ChatLongClickPopUp$a'
+    'cn.soulapp.android.component.home.api.user.user.bean.UserFollowCount'
+    'cn.soulapp.android.component.home.databinding.CUsrLayoutMeInfoNewBinding'
+    'cn.soulapp.android.component.home.databinding.CUsrMetaFollowFansContainerBinding'
+    'cn.soulapp.android.component.home.lovebell.LoveBellProGiftDialog'
+    'cn.soulapp.android.component.home.lovebell.bean.LoveBellProConfig'
+    'cn.soulapp.android.component.home.me.UserHomeHeaderHelper'
+    'cn.soulapp.android.component.home.meta.me2.userinfo.UserInfoProvider'
+    'cn.soulapp.android.component.home.meta.view.MetaFollowFansContainerView'
+    'cn.soulapp.android.component.home.revision.RevisionProfileProvider'
+    'cn.soulapp.android.component.home.revision.RevisionProfileProvider$ViewHolder'
+    'cn.soulapp.android.component.home.user.UserHomeActivity'
+    'cn.soulapp.android.component.planet.soulmatch.utils.SocialScoreUtils'
+    'cn.soulapp.android.component.planet.soulmatch.utils.SocialScoreUtils$a'
+    'cn.soulapp.android.component.planet.soulmatch.utils.SoulMusicHelper'
+    'cn.soulapp.android.component.square.main.ad.AdExpressViewHolder'
+    'cn.soulapp.android.component.square.main.ad.AdPostViewHolder'
+    'cn.soulapp.android.component.square.main.squarepost.SquareAdapter'
+    'cn.soulapp.android.component.square.main.squarepost.viewholder.BaseSquareViewHolder'
+    'cn.soulapp.android.component.square.post.b1'
+    'cn.soulapp.android.component.square.video.adapter.a'
+    'cn.soulapp.android.component.square.video.drama.o0'
+    'cn.soulapp.android.component.square.widget.SquareFloatingButton'
+    'cn.soulapp.android.component.startup.main.MainActivity'
+    'cn.soulapp.android.component.startup.main.MainScheduler'
+    'cn.soulapp.android.lib.common.bean.ChatLimitModel'
+    'cn.soulapp.android.lib.common.utils.settings.SoulSettings'
+    'com.soul.component.componentlib.service.user.bean.User'
+    'https://t.me/+3Hl2lJ1X-oZlZTZl'
+    'https://wwbnj.lanzoul.com'
+    'https://wwbnj.lanzoul.com/'
+    'https://wwbnj.lanzoul.com/b007utki2d'
+
+--- FILE / PATH (11) ---
+    '.aac'
+    '.amr'
+    '.json'
+    '.m4a'
+    '.mp3'
+    '.png'
+    '.wav'
+    '/'
+    '/100'
+    '/18'
+    '/18 (excluding splash)'
+
+--- PREF / KEY (278) ---
+    'absolute'
+    'accept'
+    'ad_chat_tools'
+    'ad_conversation'
+    'ad_detail'
+    'ad_envelope'
+    'ad_feed'
+    'ad_float'
+    'ad_group'
+    'ad_interstitial'
+    'ad_me'
+    'ad_notice'
+    'ad_planet'
+    'ad_reward_chat'
+    'ad_reward_drama'
+    'ad_reward_web'
+    'ad_search'
+    'ad_tag'
+    'ad_tag_web'
+    'ad_video'
+    'ai_reply_auto_image_threshold_v1'
+    'ai_reply_enabled_v1'
+    'ai_reply_model_v1'
+    'ai_reply_profile_v1'
+    'alias'
+    'append'
+    'apply'
+    'below'
+    'binding'
+    'block_splash'
+    'blue'
+    'boolean'
+    'bottom'
+    'build'
+    'c_ct_chat_icon_photo_download'
+    'c_ct_longclick_menu_share'
+    'c_ct_resend_menu'
+    'c_ic_icon_question'
+    'cancel'
+    'ceil'
+    'center'
+    'chat_anti_recall'
+    'chat_hide_typing'
+    'chat_limit_session_type'
+    'chat_own_recall_no_time_limit'
+    'chat_recall_style'
+    'chat_remove_bell_gift_gate'
+    'chat_remove_gift_gate'
+    'chat_remove_social_score_limit'
+    'clear'
+    'clipboard'
+    'close'
+    'color'
+    'color_s_02'
+    'color_s_04'
+    'commit'
+    'compare'
+    'comparing'
+    'compatibility'
+    'compile'
+    'compress'
+    'concat'
+    'container'
+    'contains'
+    'content'
+    'conversation'
+    'create'
+    'dark'
+    'debug_session'
+    'decode'
+    'delete'
+    'delta'
+    'density'
+    'deoptimize'
+    'dialog'
+    'digest'
+    'disconnect'
+    'dismiss'
+    'display_ad'
+    'donation_alipay'
+    'donation_wechat'
+    'download'
+    'download_image_no_watermark'
+    'download_video_no_watermark'
+    'draw'
+    'drawable'
+    'duration'
+    'edit'
+    'enabled'
+    'encode'
+    'enqueue'
+    'equals'
+    'execute'
+    'exists'
+    'facts'
+    'false'
+    'feed_filter_enabled'
+    'feed_filter_gender'
+    'feed_filter_keep_unknown'
+    'feed_keywords_enabled_v1'
+    'feed_keywords_v1'
+    'fields'
+    'fill'
+    'find'
+    'finger_cloth'
+    'finger_scissor'
+    'finger_stone'
+    'finish'
+    'floor'
+    'flush'
+    'format'
+    'from'
+    'ftyp'
+    'game_dice'
+    'game_finger'
+    'gender'
+    'gravity'
+    'green'
+    'group'
+    'header'
+    'height'
+    'hide'
+    'hook'
+    'hook_diagnostics_last_host_version'
+    'hook_diagnostics_last_shown_version'
+    'http'
+    'https'
+    'ic_user_follow'
+    'icon_bubble_white'
+    'icon_share_collect'
+    'inflate'
+    'info'
+    'init'
+    'input_method'
+    'insert'
+    'installed'
+    'intercept'
+    'interrupt'
+    'invalidate'
+    'invoke'
+    'is_pending'
+    'item_chat_message_receive'
+    'iterator'
+    'iv_like'
+    'join'
+    'key_item_post'
+    'keys'
+    'layout'
+    'left'
+    'length'
+    'load'
+    'loaded'
+    'long'
+    'luminance'
+    'main_bottom_tab_bar'
+    'main_tab_me'
+    'main_tab_msg'
+    'main_tab_planet'
+    'main_tab_square'
+    'match_mute_background_music'
+    'matcher'
+    'matches'
+    'measure'
+    'menu_tab_voice'
+    'menu_tab_voice_inner'
+    'menu_tab_voice_inner_outside'
+    'message_button'
+    'meta'
+    'mime_type'
+    'mkdirs'
+    'mode'
+    'model'
+    'move'
+    'mutate'
+    'name'
+    'name_all'
+    'newsoul_bookmark'
+    'newsoul_debug'
+    'next'
+    'nickname'
+    'number'
+    'obtain'
+    'page_log'
+    'pager_square'
+    'parse'
+    'patch'
+    'photo'
+    'point'
+    'post'
+    'post_remove_share_limit'
+    'presenter'
+    'privacy'
+    'privacy_'
+    'privacy_allow_download'
+    'privacy_allow_repeat'
+    'privacy_allow_screenshot'
+    'proceed'
+    'process_resume'
+    'profile_disguise_'
+    'profile_disguise_days_'
+    'profile_disguise_follow_'
+    'profile_disguise_followed_'
+    'profile_disguise_visitor_'
+    'puid'
+    'quote'
+    'radius'
+    'read'
+    'ready'
+    'records_dropped'
+    'recycle'
+    'refresh'
+    'registered'
+    'relative_path'
+    'release'
+    'remove'
+    'repeat'
+    'replace'
+    'reset'
+    'restore'
+    'reversed'
+    'revision'
+    'right'
+    'round'
+    'save'
+    'scale'
+    'sequence'
+    'session'
+    'session_start'
+    'session_stop'
+    'settings'
+    'show'
+    'signature'
+    'signum'
+    'size'
+    'snap'
+    'sort'
+    'split'
+    'square_auto_like'
+    'square_like_all_loaded'
+    'square_visible_like'
+    'start'
+    'startup_toast'
+    'status'
+    'strength'
+    'submit'
+    'subscribe'
+    'substring'
+    'sync'
+    'tags'
+    'test'
+    'text'
+    'tick'
+    'time'
+    'title'
+    'toggle'
+    'topic_title'
+    'translate'
+    'trim'
+    'true'
+    'tv_mutily_choose'
+    'tv_nikename'
+    'tv_nikename_flag'
+    'tv_share'
+    'tv_title'
+    'type'
+    'unavailable'
+    'unknown'
+    'until'
+    'update'
+    'user'
+    'values'
+    'video'
+    'visible'
+    'weight'
+    'width'
+    'with'
+    'wrap'
+    'write'
+
+--- SOUL/APP WORD (239) ---
+    '\nSoul '
+    "(()=>{if(location.origin!=='https://app.soulapp.cn'||location.pathname!='/setting/'||!document.body)return false;const want='"
+    'Missing Soul resource: '
+    'Mozilla/5.0 NewSoul-UpdateCheck'
+    'New Soul'

@@ -1,0 +1,315 @@
+﻿====================================================================================================
+Ldev/local/newsoul/Q0;->A(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'SoulHook102'
+     'b'
+     'cn.soulapp.android.square.utils.ImageDownloader'
+     'cn.soulapp.android.square.utils.ImageMarkProcessor'
+     'cn.soulapp.android.square.utils.b'
+     'cn.soulapp.android.square.utils.h2'
+     'download_image_no_watermark'
+     'download_video_no_watermark'
+     'f'
+     'image watermark control unavailable'
+     'lf.b'
+     'video watermark control unavailable'
+TYPES: ['Landroid/content/Context;', 'Ljava/lang/String;']
+CALLEES:
+     Ldev/local/newsoul/Q0;->H(Lio/github/libxposed/api/XposedModule;Ljava/lang/reflect/Method;Ljava/lang/String;IILjava/lang/reflect/Method;)V
+     Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+     Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+
+====================================================================================================
+Ldev/local/newsoul/Q0;->B(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     '$Operate'
+     'E'
+     'P0'
+     'SoulHook102'
+     'a'
+     'cn.soulapp.android.square.BaseSeedsDialogFragment'
+     'cn.soulapp.android.square.SeedsShareDialogFragment'
+     'cn.soulapp.android.square.post.bean.Post'
+     'content'
+     'dismiss'
+     'initViews'
+     'new-soul/post-copy-action'
+     'new-soul/post-copy-click'
+     'post copy hooks installed'
+     'post copy hooks unavailable'
+     'q'
+TYPES: ['Landroid/view/View;', 'Ldev/local/newsoul/b;', 'Ldev/local/newsoul/f1;', 'Ljava/lang/String;']
+CALLEES:
+     Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+     Ldev/local/newsoul/Q0;->I(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;Ljava/lang/Class;Ljava/lang/reflect/Field;)V
+     Ldev/local/newsoul/b;-><init>(Ljava/lang/reflect/Field;Ljava/lang/reflect/Field;Ljava/lang/reflect/Field;Ljava/lang/reflect/Method;I)V
+     Ldev/local/newsoul/f1;-><init>(Ljava/lang/reflect/AccessibleObject;Ljava/lang/reflect/AccessibleObject;Ljava/lang/reflect/AccessibleObject;Ljava/lang/reflect/Executable;I)V
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->deoptimize(Ljava/lang/reflect/Executable;)Z
+     Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+     Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+     Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+     Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+     Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/Class;->getName()Ljava/lang/String;
+     Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+     Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+     Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+
+====================================================================================================
+Ldev/local/newsoul/Q0;->C(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'E'
+     'SoulHook102'
+     'Unexpected share permission signature'
+     'Unexpected share post field'
+     'cn.soulapp.android.square.SeedsShareDialogFragment'
+     'cn.soulapp.android.square.post.bean.Post'
+     'initViews'
+     'new-soul/post-share-permission'
+     'post share control installed'
+     'post share control unavailable'
+     'r0'
+TYPES: ['Landroid/view/View;', 'Ldev/local/newsoul/k1;', 'Ljava/lang/NoSuchFieldException;', 'Ljava/lang/NoSuchMethodException;']
+CALLEES:
+     Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+     Ldev/local/newsoul/k1;-><init>(Ljava/lang/reflect/Field;I)V
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->deoptimize(Ljava/lang/reflect/Executable;)Z
+     Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+     Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+     Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+     Ljava/lang/NoSuchFieldException;-><init>(Ljava/lang/String;)V
+     Ljava/lang/NoSuchMethodException;-><init>(Ljava/lang/String;)V
+     Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+     Ljava/lang/reflect/Field;->getType()Ljava/lang/Class;
+     Ljava/lang/reflect/Method;->getModifiers()I
+     Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+     Ljava/lang/reflect/Modifier;->isPrivate(I)Z
+
+====================================================================================================
+Ldev/local/newsoul/Q0;->D(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'C'
+     'G'
+     'SoulHook102'
+     'cn.soulapp.android.component.chat.snapchat.PrivacyProtectPreviewActivity'
+     'cn.soulapp.android.component.chat.snapchat.SnapChatActivity'
+     'init'
+     'new-soul/privacy-photo-preview'
+     'privacy'
+     'privacy photo controls installed'
+     'privacy photo controls unavailable'
+     'snap'
+TYPES: ['Landroid/os/Bundle;', 'Ldev/local/newsoul/a;']
+CALLEES:
+     Ldev/local/newsoul/Q0;->J(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     Ldev/local/newsoul/Q0;->w(Ljava/lang/String;)V
+     Ldev/local/newsoul/a;-><init>(I)V
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+     Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+
+====================================================================================================
+Ldev/local/newsoul/Q0;->E(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     '$d1'
+     '; dialog='
+     'SoulHook102'
+     'Unexpected social score dialog signature'
+     'Unexpected social score gate '
+     'androidx.fragment.app.FragmentManager'
+     'b'
+     'cn.soulapp.android.component.chat.bean.SocialGraceScoreBean'
+     'cn.soulapp.android.component.chat.fragment.ConversationFragment$d1'
+     'cn.soulapp.android.component.planet.soulmatch.utils.SocialScoreUtils'
+     'cn.soulapp.android.component.planet.soulmatch.utils.SocialScoreUtils$a'
+     'getCanNotSendBeforeReply'
+     'getCreateSessionLimit'
+     'getForbidCall'
+     'getForbidPic'
+     'new-soul/social-score-'
+     'new-soul/social-score-dialog'
+     'social score dialog unavailable'
+     'social score hooks: model='
+     'social score model unavailable'
+     'uj.c0'
+     'uj.c0$q'
+TYPES: ['Ldev/local/newsoul/a;', 'Ldev/local/newsoul/f;', 'Ljava/lang/NoSuchMethodException;', 'Ljava/lang/StringBuilder;']
+CALLEES:
+     Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+     Ldev/local/newsoul/a;-><init>(I)V
+     Ldev/local/newsoul/f;-><init>(ILjava/lang/Object;)V
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->deoptimize(Ljava/lang/reflect/Executable;)Z
+     Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+     Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;
+     Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+     Ljava/lang/NoSuchMethodException;-><init>(Ljava/lang/String;)V
+     Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+     Ljava/lang/StringBuilder;-><init>()V
+     Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+     Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+     Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+     Ljava/lang/reflect/Method;->getModifiers()I
+     Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+     Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
+     Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+     Ljava/lang/reflect/Modifier;->isStatic(I)Z
+     Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+     Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+====================================================================================================
+Ldev/local/newsoul/Q0;->F(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'SoulHook102'
+     'cn.soulapp.android.component.square.widget.SquareFloatingButton'
+     'cn.soulapp.android.component.startup.main.MainActivity'
+     'cn.soulapp.android.square.post.bean.Post'
+     'getAdResponse'
+     'hasDeclare'
+     'id'
+     'incentiveModel'
+     'new-soul/square-like-envelope-create'
+     'new-soul/square-like-envelope-visibility'
+     'new-soul/square-like-lifecycle'
+     'onCreate'
+     'onVisibilityChanged'
+     'square like unavailable'
+TYPES: ['Landroid/content/Context;', 'Landroid/os/Bundle;', 'Landroid/util/AttributeSet;', 'Landroid/view/View;', 'Ldev/local/newsoul/a;']
+CALLEES:
+     Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+     Ldev/local/newsoul/Q0;->y(Ljava/lang/ClassLoader;Ljava/lang/Class;)V
+     Ldev/local/newsoul/a;-><init>(I)V
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+     Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+     Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+     Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+
+====================================================================================================
+Ldev/local/newsoul/Q0;->G(Lio/github/libxposed/api/XposedModule;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;ZII)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'Unexpected boundary signature'
+     'new-soul/'
+     'repeat.show'
+TYPES: ['Ldev/local/newsoul/v;', 'Ljava/lang/NoSuchMethodException;']
+CALLEES:
+     Ldev/local/newsoul/Q0;->k(Lio/github/libxposed/api/XposedModule;Ljava/lang/reflect/Method;Ljava/lang/String;)V
+     Ldev/local/newsoul/V;->i(Ljava/lang/String;Ljava/lang/Throwable;)V
+     Ldev/local/newsoul/v;-><init>(IZLjava/lang/String;I)V
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/NoSuchMethodException;-><init>(Ljava/lang/String;)V
+     Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+     Ljava/lang/reflect/Method;->getModifiers()I
+     Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+     Ljava/lang/reflect/Modifier;->isStatic(I)Z
+
+====================================================================================================
+Ldev/local/newsoul/Q0;->H(Lio/github/libxposed/api/XposedModule;Ljava/lang/reflect/Method;Ljava/lang/String;IILjava/lang/reflect/Method;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'SoulHook102'
+     'Unexpected download signature: '
+     'new-soul/'
+     'watermark control installed: '
+TYPES: ['Ldev/local/newsoul/X0;', 'Ljava/lang/IllegalStateException;']
+CALLEES:
+     Ldev/local/newsoul/X0;-><init>(ILjava/lang/reflect/Method;Ljava/lang/String;Lio/github/libxposed/api/XposedModule;I)V
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;)V
+     Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+     Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+     Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+     Ljava/lang/reflect/Method;->getModifiers()I
+     Ljava/lang/reflect/Modifier;->isStatic(I)Z
+
+====================================================================================================
+Ldev/local/newsoul/Q0;->I(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;Ljava/lang/Class;Ljava/lang/reflect/Field;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     'SoulHook102'
+     'a'
+     'c'
+     'cn.soulapp.android.square.adapter.TypeAdapter$a'
+     'new-soul/action-marks-post'
+     'post action mark unavailable'
+TYPES: ['Ldev/local/newsoul/B;']
+CALLEES:
+     Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+     Ldev/local/newsoul/B;-><init>(Ljava/lang/reflect/Field;Ljava/lang/reflect/Field;I)V
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->deoptimize(Ljava/lang/reflect/Executable;)Z
+     Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+     Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+     Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+     Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+
+====================================================================================================
+Ldev/local/newsoul/Q0;->K(Lio/github/libxposed/api/XposedModule;Ljava/lang/ClassLoader;Ljava/lang/Class;)V
+----------------------------------------------------------------------------------------------------
+STRINGS:
+     '$ViewHolder'
+     'AbsChatDualItem bind'
+     'Ambiguous chat row binding'
+     'cn.soulapp.android.component.chat.widget.AbsChatDualItem'
+     'e'
+     'itemView'
+     'new-soul/chat-recall-mark'
+TYPES: ['Ldev/local/newsoul/B;', 'Ljava/lang/IllegalStateException;', 'Ljava/lang/NoSuchMethodException;', 'Ljava/util/List;']
+CALLEES:
+     Ldev/local/newsoul/B;-><init>(Ljava/lang/reflect/Field;Ljava/lang/reflect/Field;I)V
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+     Lio/github/libxposed/api/XposedModule;->deoptimize(Ljava/lang/reflect/Executable;)Z
+     Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+     Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;
+     Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+     Ljava/lang/Class;->getName()Ljava/lang/String;
+     Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+     Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+     Ljava/lang/NoSuchMethodException;-><init>(Ljava/lang/String;)V
+     Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+     Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+     Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
+

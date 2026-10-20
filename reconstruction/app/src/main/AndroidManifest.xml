@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.local.newsoul.public">
+
+    <!-- 与原 APK 一致：minSdk 26 / targetSdk 35，无任何权限、无 Activity -->
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="35" />
+
+    <application
+        android:label="New Soul"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:debuggable="false"
+        android:allowBackup="false"
+        android:supportsRtl="true" />
+</manifest>

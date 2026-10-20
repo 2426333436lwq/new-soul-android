@@ -1,0 +1,468 @@
+﻿====================================================================================================
+Ldev/local/newsoul/f1;-><init>(Ljava/lang/reflect/AccessibleObject;Ljava/lang/reflect/AccessibleObject;Ljava/lang/reflect/AccessibleObject;Ljava/lang/reflect/Executable;I)V
+  0000  iput                    -> Ldev/local/newsoul/f1;->a:I
+  0004  iput-object             -> Ldev/local/newsoul/f1;->b:Ljava/lang/reflect/AccessibleObject;
+  0008  iput-object             -> Ldev/local/newsoul/f1;->c:Ljava/lang/reflect/AccessibleObject;
+  000c  iput-object             -> Ldev/local/newsoul/f1;->d:Ljava/lang/reflect/AccessibleObject;
+  0010  iput-object             -> Ldev/local/newsoul/f1;->e:Ljava/lang/reflect/Executable;
+  0014  invoke-direct           -> Ljava/lang/Object;-><init>()V
+  001a  op0e                  
+====================================================================================================
+Ldev/local/newsoul/f1;->intercept(Lio/github/libxposed/api/XposedInterface$Chain;)Ljava/lang/Object;
+  0000  iget                    -> Ldev/local/newsoul/f1;->a:I
+  0004  op2b                  
+  000a  iget-object             -> Ldev/local/newsoul/f1;->b:Ljava/lang/reflect/AccessibleObject;
+  000e  check-cast              -> Ljava/lang/reflect/Field;
+  0012  iget-object             -> Ldev/local/newsoul/f1;->c:Ljava/lang/reflect/AccessibleObject;
+  0016  check-cast              -> Ljava/lang/reflect/Field;
+  001a  iget-object             -> Ldev/local/newsoul/f1;->e:Ljava/lang/reflect/Executable;
+  001e  check-cast              -> Ljava/lang/reflect/Constructor;
+  0022  const-string            -> 'SoulHook102'
+  0026  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$Chain;->getThisObject()Ljava/lang/Object;
+  002c  op0c                  
+  002e  invoke-virtual          -> Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  0034  op0c                  
+  0036  op38                  
+  003c  op4a                  
+  0040  op0c                  
+  0042  invoke-virtual          -> Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  0048  op0c                  
+  004a  check-cast              -> Ljava/util/List;
+  004e  new-instance            -> Ljava/util/ArrayList;
+  0052  invoke-direct           -> Ljava/util/ArrayList;-><init>()V
+  0058  iget-object             -> Ldev/local/newsoul/f1;->d:Ljava/lang/reflect/AccessibleObject;
+  005c  check-cast              -> Ljava/lang/reflect/Field;
+  0060  op14                  
+  0064  opfc                  
+  006a  invoke-interface        -> Ljava/util/List;->iterator()Ljava/util/Iterator;
+  0070  op0c                  
+  0072  invoke-interface        -> Ljava/util/Iterator;->hasNext()Z
+  0078  op0a                  
+  007a  op38                  
+  0080  op88                  
+  0084  op0c                  
+  0086  invoke-virtual          -> Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
+  008c  op0a                  
+  008e  op32                  
+  0092  invoke-virtual          -> Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  0098  op28                  
+  009a  op0d                  
+  009c  op28                  
+  009e  invoke-virtual          -> Ljava/util/ArrayList;->size()I
+  00a4  op0a                  
+  00a6  op12                  
+  00a8  invoke-virtual          -> Ljava/util/ArrayList;->size()I
+  00ae  op0a                  
+  00b0  op35                  
+  00b6  op5d                    -> Ldev/local/newsoul/E1;->a:Landroid/app/Activity;
+  00ba  op0c                  
+  00bc  invoke-virtual          -> Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
+  00c2  op0a                  
+  00c4  op13                  
+  00c6  const-string           !!
+  00ca  op04                  
+  00cc  op01                  
+  00ce  op28                  
+  00d0  opd8                  
+  00d4  op28                  
+  00d6  op13                  
+  00d8  op33                  
+  00dc  opad                  
+  00e0  op0c                  
+  00e2  const-string            -> '复'
+  00e6  sget-object             -> Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+  00ea  op24                  
+  00f0  op0c                  
+  00f2  invoke-virtual          -> Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+  00f8  op0c                  
+  00fa  invoke-virtual          -> Ljava/lang/reflect/Field;->setInt(Ljava/lang/Object;I)V
+  0100  invoke-virtual          -> Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
+  0106  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$Chain;->getThisObject()Ljava/lang/Object;
+  010c  op0c                  
+  010e  invoke-virtual          -> Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+  0114  invoke-virtual          -> Ljava/util/ArrayList;->size()I
+  011a  op0a                  
+  011c  new-instance            -> Ljava/lang/StringBuilder;
+  0120  invoke-direct           -> Ljava/lang/StringBuilder;-><init>()V
+  0126  const-string            -> 'post copy action added; count='
+  012a  invoke-virtual          -> Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  0130  invoke-virtual          -> Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  0136  invoke-virtual          -> Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  013c  op0c                  
+  013e  invoke-static           -> Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+  0144  op28                  
+  0146  const-string            -> 'post copy action unavailable'
+  014a  invoke-static           -> Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  0150  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$Chain;->proceed()Ljava/lang/Object;
+  0156  op0c                  
+  0158  op11                  
+  015a  iget-object             -> Ldev/local/newsoul/f1;->b:Ljava/lang/reflect/AccessibleObject;
+  015e  check-cast              -> Ljava/lang/reflect/Method;
+  0162  iget-object             -> Ldev/local/newsoul/f1;->c:Ljava/lang/reflect/AccessibleObject;
+  0166  check-cast              -> Ljava/lang/reflect/Method;
+  016a  iget-object             -> Ldev/local/newsoul/f1;->d:Ljava/lang/reflect/AccessibleObject;
+  016e  check-cast              -> Ljava/lang/reflect/Method;
+  0172  iget-object             -> Ldev/local/newsoul/f1;->e:Ljava/lang/reflect/Executable;
+  0176  check-cast              -> Ljava/lang/reflect/Method;
+  017a  op12                  
+  017c  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$Chain;->getArg(I)Ljava/lang/Object;
+  0182  op0c                  
+  0184  op12                  
+  0186  invoke-virtual          -> Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  018c  op0c                  
+  018e  check-cast              -> Ljava/lang/String;
+  0192  op38                  
+  0198  iput-object            !!
+  019c  opd9                  
+  01a0  op0a                  
+  01a2  op39                  
+  01a6  invoke-virtual          -> Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  01ac  op0c                  
+  01ae  invoke-virtual          -> Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  01b4  op0a                  
+  01b6  op38                  
+  01bc  op19                  
+  01c0  op0c                  
+  01c2  check-cast              -> Ljava/lang/Boolean;
+  01c6  invoke-virtual          -> Ljava/lang/Boolean;->booleanValue()Z
+  01cc  op0a                  
+  01ce  op39                  
+  01d2  invoke-virtual          -> Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  01d8  op0c                  
+  01da  check-cast              -> Landroid/content/Context;
+  01de  invoke-static           -> Ldev/local/newsoul/w2;->o(Landroid/content/Context;)Landroid/content/SharedPreferences;
+  01e4  op0c                  
+  01e6  const-string            -> 'chat_own_recall_no_time_limit'
+  01ea  op12                  
+  01ec  invoke-interface        -> Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+  01f2  op0a                  
+  01f4  op38                  
+  01fa  op94                  
+  01fe  op00                  
+  0200  op00                  
+  0202  op0c                  
+  0204  invoke-virtual          -> Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
+  020a  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$Chain;->proceed()Ljava/lang/Object;
+  0210  op0c                  
+  0212  op39                  
+  0216  invoke-virtual          -> Ljava/lang/ThreadLocal;->remove()V
+  021c  op28                  
+  021e  invoke-virtual          -> Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
+  0224  op28                  
+  0226  op0d                  
+  0228  op39                  
+  022c  invoke-virtual          -> Ljava/lang/ThreadLocal;->remove()V
+  0232  op28                  
+  0234  invoke-virtual          -> Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
+  023a  op27                  
+  023c  op0d                  
+  023e  const-string            -> 'SoulHook102'
+  0242  const-string            -> 'own recall eligibility unavailable'
+  0246  invoke-static           -> Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  024c  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$Chain;->proceed()Ljava/lang/Object;
+  0252  op0c                  
+  0254  op11                  
+  0256  op00                  
+  0258  op00                  
+  025a  op01                  
+  025c  op00                  
+  025e  op00                  
+  0260  opab                  
+====================================================================================================
+Ldev/local/newsoul/p;-><init>(Ljava/lang/reflect/Field;ZLjava/lang/reflect/Method;)V
+  0000  invoke-direct           -> Ljava/lang/Object;-><init>()V
+  0006  iput-object             -> Ldev/local/newsoul/p;->a:Ljava/lang/reflect/Field;
+  000a  op5c                    -> Ldev/local/newsoul/p;->b:Z
+  000e  iput-object             -> Ldev/local/newsoul/p;->c:Ljava/lang/reflect/Method;
+  0012  op0e                  
+====================================================================================================
+Ldev/local/newsoul/p;->intercept(Lio/github/libxposed/api/XposedInterface$Chain;)Ljava/lang/Object;
+  0000  sget-object             -> Ldev/local/newsoul/t;->c:Ljava/lang/ThreadLocal;
+  0004  invoke-virtual          -> Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+  000a  op0c                  
+  000c  op38                  
+  0012  op4b                  
+  0016  op0c                  
+  0018  op28                  
+  001a  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$Chain;->getThisObject()Ljava/lang/Object;
+  0020  op0c                  
+  0022  iget-object             -> Ldev/local/newsoul/p;->a:Ljava/lang/reflect/Field;
+  0026  invoke-virtual          -> Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  002c  op0c                  
+  002e  invoke-virtual          -> Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  0034  op0c                  
+  0036  const-string            -> 'getActivity'
+  003a  op12                  
+  003c  invoke-virtual          -> Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  0042  op0c                  
+  0044  invoke-virtual          -> Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  004a  op0c                  
+  004c  check-cast              -> Landroid/app/Activity;
+  0050  op38                  
+  0056  op15                  
+  005a  op0a                  
+  005c  op39                  
+  0060  invoke-virtual          -> Landroid/app/Activity;->isDestroyed()Z
+  0066  op0a                  
+  0068  op39                  
+  006c  sget-object             -> Ldev/local/newsoul/w2;->a:Ljava/util/WeakHashMap;
+  0070  const-string            -> 'dev.local.soulhookdemo.public.settings.v1'
+  0074  op12                  
+  0076  invoke-virtual          -> Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+  007c  op0c                  
+  007e  op55                    -> Ldev/local/newsoul/p;->b:Z
+  0082  op38                  
+  0088  opb5                  
+  008c  const-string            -> 'game_finger'
+  0090  op12                  
+  0092  invoke-interface        -> Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+  0098  op0a                  
+  009a  op39                  
+  009e  op28                  
+  00a0  sget-object             -> Ldev/local/newsoul/t;->e:Landroid/os/Handler;
+  00a4  new-instance            -> Ldev/local/newsoul/q;
+  00a8  iget-object             -> Ldev/local/newsoul/p;->c:Ljava/lang/reflect/Method;
+  00ac  invoke-direct           -> Ldev/local/newsoul/q;-><init>(Landroid/app/Activity;ZLjava/lang/reflect/Method;Ljava/lang/Object;)V
+  00b2  invoke-virtual          -> Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+  00b8  op07                  
+  00ba  op28                  
+  00bc  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$Chain;->proceed()Ljava/lang/Object;
+  00c2  op0c                  
+  00c4  op11                  
+====================================================================================================
+Ldev/local/newsoul/q;-><init>(Landroid/app/Activity;ZLjava/lang/reflect/Method;Ljava/lang/Object;)V
+  0000  op12                  
+  0002  iput                    -> Ldev/local/newsoul/q;->a:I
+  0006  invoke-direct           -> Ljava/lang/Object;-><init>()V
+  000c  iput-object             -> Ldev/local/newsoul/q;->b:Landroid/view/KeyEvent$Callback;
+  0010  op5c                    -> Ldev/local/newsoul/q;->c:Z
+  0014  iput-object             -> Ldev/local/newsoul/q;->e:Ljava/lang/Object;
+  0018  iput-object             -> Ldev/local/newsoul/q;->d:Ljava/lang/Object;
+  001c  op0e                  
+====================================================================================================
+Ldev/local/newsoul/q;-><init>(Ldev/local/newsoul/r2;Landroid/content/SharedPreferences;Ljava/lang/String;Z)V
+  0000  op12                  
+  0002  iput                    -> Ldev/local/newsoul/q;->a:I
+  0006  invoke-direct           -> Ljava/lang/Object;-><init>()V
+  000c  iput-object             -> Ldev/local/newsoul/q;->b:Landroid/view/KeyEvent$Callback;
+  0010  iput-object             -> Ldev/local/newsoul/q;->e:Ljava/lang/Object;
+  0014  iput-object             -> Ldev/local/newsoul/q;->d:Ljava/lang/Object;
+  0018  op5c                    -> Ldev/local/newsoul/q;->c:Z
+  001c  op0e                  
+====================================================================================================
+Ldev/local/newsoul/q;-><init>(Ldev/local/newsoul/t1;Landroid/app/Activity;ZLjava/lang/Object;)V
+  0000  op12                  
+  0002  iput                    -> Ldev/local/newsoul/q;->a:I
+  0006  invoke-direct           -> Ljava/lang/Object;-><init>()V
+  000c  iput-object             -> Ldev/local/newsoul/q;->e:Ljava/lang/Object;
+  0010  iput-object             -> Ldev/local/newsoul/q;->b:Landroid/view/KeyEvent$Callback;
+  0014  op5c                    -> Ldev/local/newsoul/q;->c:Z
+  0018  iput-object             -> Ldev/local/newsoul/q;->d:Ljava/lang/Object;
+  001c  op0e                  
+====================================================================================================
+Ldev/local/newsoul/q;->run()V
+  0000  iget                    -> Ldev/local/newsoul/q;->a:I
+  0004  op2b                  
+  000a  iget-object             -> Ldev/local/newsoul/q;->e:Ljava/lang/Object;
+  000e  check-cast              -> Landroid/content/SharedPreferences;
+  0012  iget-object             -> Ldev/local/newsoul/q;->d:Ljava/lang/Object;
+  0016  check-cast              -> Ljava/lang/String;
+  001a  op55                    -> Ldev/local/newsoul/q;->c:Z
+  001e  invoke-interface        -> Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+  0024  op0a                  
+  0026  op12                  
+  0028  iget-object             -> Ldev/local/newsoul/q;->b:Landroid/view/KeyEvent$Callback;
+  002c  check-cast              -> Ldev/local/newsoul/r2;
+  0030  op5c                    -> Ldev/local/newsoul/r2;->b:Z
+  0034  op12                  
+  0036  invoke-virtual          -> Ldev/local/newsoul/r2;->setChecked(Z)V
+  003c  op5c                    -> Ldev/local/newsoul/r2;->b:Z
+  0040  op0e                  
+  0042  op0d                  
+  0044  op5c                    -> Ldev/local/newsoul/r2;->b:Z
+  0048  op27                  
+  004a  iget-object             -> Ldev/local/newsoul/q;->d:Ljava/lang/Object;
+  004e  iget-object             -> Ldev/local/newsoul/q;->e:Ljava/lang/Object;
+  0052  check-cast              -> Ldev/local/newsoul/t1;
+  0056  op12                  
+  0058  op5c                    -> Ldev/local/newsoul/t1;->g:Z
+  005c  iget-object             -> Ldev/local/newsoul/q;->b:Landroid/view/KeyEvent$Callback;
+  0060  check-cast              -> Landroid/app/Activity;
+  0064  invoke-static           -> Ldev/local/newsoul/u1;->b(Landroid/app/Activity;)Z
+  006a  op0a                  
+  006c  op38                  
+  0072  invoke-direct           -> Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+  0078  op00                  
+  007a  op0c                  
+  007c  invoke-virtual          -> Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  0082  op0a                  
+  0084  op28                  
+  0086  op01                  
+  0088  op39                  
+  008c  op28                  
+  008e  op55                    -> Ldev/local/newsoul/q;->c:Z
+  0092  op38                  
+  0098  op92                  
+  009c  const-string            -> '已'
+  00a0  invoke-static           -> Ldev/local/newsoul/u1;->b(Landroid/app/Activity;)Z
+  00a6  op0a                  
+  00a8  op38                  
+  00ae  op3c                  
+  00b2  op0c                  
+  00b4  invoke-virtual          -> Landroid/widget/Toast;->show()V
+  00ba  const-string            -> 'dismissAllowingStateLoss'
+  00be  invoke-static           -> Ldev/local/newsoul/u1;->c(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+  00c4  op0e                  
+  00c6  new-instance            -> Ldev/local/newsoul/r;
+  00ca  iget-object             -> Ldev/local/newsoul/q;->b:Landroid/view/KeyEvent$Callback;
+  00ce  check-cast              -> Landroid/app/Activity;
+  00d2  iget-object             -> Ldev/local/newsoul/q;->e:Ljava/lang/Object;
+  00d6  check-cast              -> Ljava/lang/reflect/Method;
+  00da  iget-object             -> Ldev/local/newsoul/q;->d:Ljava/lang/Object;
+  00de  invoke-direct           -> Ldev/local/newsoul/r;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+  00e4  op55                    -> Ldev/local/newsoul/q;->c:Z
+  00e8  invoke-static           -> Ldev/local/newsoul/t;->b(Landroid/app/Activity;Ldev/local/newsoul/r;Z)V
+  00ee  op0e                  
+  00f0  op00                  
+  00f2  op02                  
+  00f4  op00                  
+  00f6  op00                  
+  00f8  op61                    -> Landroid/content/pm/PackageInfo;->versionCode:I
+  00fc  op23                  
+====================================================================================================
+Ldev/local/newsoul/s;-><init>(Landroid/app/Activity;Ldev/local/newsoul/r;Z)V
+  0000  invoke-direct           -> Ljava/lang/Object;-><init>()V
+  0006  iput-object             -> Ldev/local/newsoul/s;->a:Ldev/local/newsoul/r;
+  000a  op5c                    -> Ldev/local/newsoul/s;->b:Z
+  000e  iput-object             -> Ldev/local/newsoul/s;->c:Landroid/app/Activity;
+  0012  op0e                  
+====================================================================================================
+Ldev/local/newsoul/t;-><clinit>()V
+  0000  new-instance            -> Ljava/lang/ThreadLocal;
+  0004  invoke-direct           -> Ljava/lang/ThreadLocal;-><init>()V
+  000a  sput-object             -> Ldev/local/newsoul/t;->c:Ljava/lang/ThreadLocal;
+  000e  new-instance            -> Ljava/util/WeakHashMap;
+  0012  invoke-direct           -> Ljava/util/WeakHashMap;-><init>()V
+  0018  invoke-static           -> Ljava/util/Collections;->newSetFromMap(Ljava/util/Map;)Ljava/util/Set;
+  001e  op0c                  
+  0020  sput-object             -> Ldev/local/newsoul/t;->d:Ljava/util/Set;
+  0024  new-instance            -> Landroid/os/Handler;
+  0028  invoke-static           -> Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+  002e  op0c                  
+  0030  invoke-direct           -> Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+  0036  sput-object             -> Ldev/local/newsoul/t;->e:Landroid/os/Handler;
+  003a  const-string            -> ''
+  003e  const-string            -> ''
+  0042  const-string            -> ''
+  0046  op24                  
+  004c  op0c                  
+  004e  sput-object             -> Ldev/local/newsoul/t;->g:[Ljava/lang/String;
+  0052  op0e                  
+====================================================================================================
+Ldev/local/newsoul/t;->a(Ljava/lang/Class;Ljava/lang/reflect/Field;Ljava/lang/String;Z)Z
+  0000  const-string            -> 'new-soul/game-picker/'
+  0004  op12                  
+  0006  invoke-virtual          -> Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  000c  op0c                  
+  000e  invoke-virtual          -> Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+  0014  op0c                  
+  0016  sget-object             -> Ljava/lang/Void;->TYPE:Ljava/lang/Class;
+  001a  op33                  
+  001e  sget-object             -> Ldev/local/newsoul/t;->f:Lio/github/libxposed/api/XposedModule;
+  0022  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->hook(Ljava/lang/reflect/Executable;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0028  op0c                  
+  002a  invoke-virtual          -> Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+  0030  op0c                  
+  0032  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setId(Ljava/lang/String;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0038  op0c                  
+  003a  sget-object             -> Lio/github/libxposed/api/XposedInterface$ExceptionMode;->PROTECTIVE:Lio/github/libxposed/api/XposedInterface$ExceptionMode;
+  003e  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->setExceptionMode(Lio/github/libxposed/api/XposedInterface$ExceptionMode;)Lio/github/libxposed/api/XposedInterface$HookBuilder;
+  0044  op0c                  
+  0046  new-instance            -> Ldev/local/newsoul/p;
+  004a  invoke-direct           -> Ldev/local/newsoul/p;-><init>(Ljava/lang/reflect/Field;ZLjava/lang/reflect/Method;)V
+  0050  invoke-interface        -> Lio/github/libxposed/api/XposedInterface$HookBuilder;->intercept(Lio/github/libxposed/api/XposedInterface$Hooker;)Lio/github/libxposed/api/XposedInterface$HookHandle;
+  0056  sget-object             -> Ldev/local/newsoul/t;->f:Lio/github/libxposed/api/XposedModule;
+  005a  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->deoptimize(Ljava/lang/reflect/Executable;)Z
+  0060  op12                  
+  0062  op0f                  
+  0064  op0d                  
+  0066  op28                  
+  0068  new-instance            -> Ljava/lang/IllegalStateException;
+  006c  const-string            -> 'send signature changed'
+  0070  invoke-direct           -> Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+  0076  op27                  
+  0078  sget-object             -> Ldev/local/newsoul/t;->f:Lio/github/libxposed/api/XposedModule;
+  007c  const-string            -> 'game hook unavailable: '
+  0080  invoke-virtual          -> Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+  0086  op0c                  
+  0088  op12                  
+  008a  const-string            -> 'SoulHook102'
+  008e  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+  0094  op12                  
+  0096  op0f                  
+====================================================================================================
+Ldev/local/newsoul/t;->b(Landroid/app/Activity;Ldev/local/newsoul/r;Z)V
+  0000  invoke-virtual          -> Landroid/app/Activity;->isFinishing()Z
+  0006  op0a                  
+  0008  op39                  
+  000c  invoke-virtual          -> Landroid/app/Activity;->isDestroyed()Z
+  0012  op0a                  
+  0014  op39                  
+  0018  sget-object             -> Ldev/local/newsoul/t;->d:Ljava/util/Set;
+  001c  invoke-interface        -> Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+  0022  op0a                  
+  0024  op38                  
+  002a  invoke-interface        -> Ljava/util/Set;->add(Ljava/lang/Object;)Z
+  0030  op39                  
+  0034  op12                  
+  0036  op28                  
+  0038  op12                  
+  003a  new-instance            -> Ldev/local/newsoul/s;
+  003e  invoke-direct           -> Ldev/local/newsoul/s;-><init>(Landroid/app/Activity;Ldev/local/newsoul/r;Z)V
+  0044  new-instance            -> Ldev/local/newsoul/m;
+  0048  op12                  
+  004a  invoke-direct           -> Ldev/local/newsoul/m;-><init>(Landroid/app/Activity;I)V
+  0050  invoke-static           -> Ldev/local/newsoul/F0;->c(Landroid/app/Activity;ZZLdev/local/newsoul/s;Ldev/local/newsoul/m;)V
+  0056  op28                  
+  0058  op0d                  
+  005a  invoke-interface        -> Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+  0060  sget-object             -> Ldev/local/newsoul/t;->f:Lio/github/libxposed/api/XposedModule;
+  0064  const-string            -> 'game picker failed'
+  0068  op12                  
+  006a  const-string            -> 'SoulHook102'
+  006e  invoke-virtual          -> Lio/github/libxposed/api/XposedModule;->log(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+  0074  op0e                  
+====================================================================================================
+Ldev/local/newsoul/r;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+  0000  iput-object             -> Ldev/local/newsoul/r;->a:Ljava/lang/Object;
+  0004  iput-object             -> Ldev/local/newsoul/r;->b:Ljava/lang/Object;
+  0008  iput-object             -> Ldev/local/newsoul/r;->c:Ljava/lang/Object;
+  000c  invoke-direct           -> Ljava/lang/Object;-><init>()V
+  0012  op0e                  
+====================================================================================================
+Ldev/local/newsoul/r;->run()V
+  0000  iget-object             -> Ldev/local/newsoul/r;->a:Ljava/lang/Object;
+  0004  check-cast              -> Ldev/local/newsoul/b3;
+  0008  iget-object             -> Ldev/local/newsoul/r;->b:Ljava/lang/Object;
+  000c  check-cast              -> Ldev/local/newsoul/h3;
+  0010  iget-object             -> Ldev/local/newsoul/r;->c:Ljava/lang/Object;
+  0014  check-cast              -> Ljava/lang/String;
+  0018  iget-object             -> Ldev/local/newsoul/b3;->f:Ldev/local/newsoul/x1;
+  001c  iget-object             -> Ldev/local/newsoul/h3;->a:Ljava/lang/String;
+  0020  op1d                  
+  0022  invoke-virtual          -> Ldev/local/newsoul/x1;->g(Ljava/lang/String;)Ldev/local/newsoul/h3;
+  0028  op0c                  
+  002a  new-instance            -> Ldev/local/newsoul/h3;
+  002e  invoke-static           -> Ldev/local/newsoul/x1;->e(Ljava/lang/String;)Ljava/lang/String;
+  0034  op0c                  
+  0036  iget                    -> Ldev/local/newsoul/h3;->c:I
+  003a  op53                    -> Ldev/local/newsoul/h3;->d:J
+  003e  iget-object             -> Ldev/local/newsoul/h3;->e:Ljava/io/File;
+  0042  op07                  
+  0044  invoke-direct/range     -> Ldev/local/newsoul/h3;-><init>(Ljava/lang/String;Ljava/lang/String;IJLjava/io/File;)V
+  004a  invoke-virtual          -> Ldev/local/newsoul/x1;->k(Ldev/local/newsoul/h3;)V
+  0050  op1e                  
+  0052  op0e                  
+  0054  op0d                  
+  0056  op1e                  
+  0058  op27                  

@@ -1,0 +1,234 @@
+{
+ "H0": [
+  {
+   "name": "a",
+   "text": "    public static int a(android.graphics.Insets p0) {\n        return p0.top;\n    }"
+  },
+  {
+   "name": "b",
+   "text": "    public static int b(android.graphics.drawable.StateListDrawable p0) {\n        return p0.getStateCount();\n    }"
+  },
+  {
+   "name": "c",
+   "text": "    public static android.graphics.RecordingCanvas c(android.graphics.RenderNode p0, int p1, int p2) {\n        return p0.beginRecording(p1, p2);\n    }"
+  },
+  {
+   "name": "e",
+   "text": "    public static android.graphics.drawable.Drawable e(android.graphics.drawable.StateListDrawable p0, int p1) {\n        return p0.getStateDrawable(p1);\n    }"
+  },
+  {
+   "name": "f",
+   "text": "    public static void f(android.graphics.Canvas p0, android.graphics.RenderNode p1) {\n        p0.drawRenderNode(p1);\n        return;\n    }"
+  },
+  {
+   "name": "g",
+   "text": "    public static void g(android.graphics.RenderNode p0) {\n        p0.discardDisplayList();\n        return;\n    }"
+  },
+  {
+   "name": "h",
+   "text": "    public static void h(android.graphics.RenderNode p0, int p1, int p2) {\n        p0.setPosition(0, 0, p1, p2);\n        return;\n    }"
+  },
+  {
+   "name": "i",
+   "text": "    public static int i(android.graphics.Insets p0) {\n        return p0.bottom;\n    }"
+  },
+  {
+   "name": "j",
+   "text": "    public static void j(android.graphics.RenderNode p0) {\n        p0.endRecording();\n        return;\n    }"
+  }
+ ],
+ "I0": [
+  {
+   "name": "a",
+   "text": "    public static android.graphics.RenderEffect a(android.graphics.RuntimeShader p0) {\n        return p0.createRuntimeShaderEffect(\"content\");\n    }"
+  },
+  {
+   "name": "c",
+   "text": "    public static android.window.OnBackInvokedDispatcher c(android.app.AlertDialog p0) {\n        return p0.getOnBackInvokedDispatcher();\n    }"
+  },
+  {
+   "name": "d",
+   "text": "    public static void d(android.graphics.RuntimeShader p0, float p1) {\n        p0.setFloatUniform(\"radius\", p1);\n        return;\n    }"
+  },
+  {
+   "name": "e",
+   "text": "    public static void e(android.graphics.RuntimeShader p0, float p1, float p2) {\n        p0.setFloatUniform(\"center\", p1, p2);\n        return;\n    }"
+  },
+  {
+   "name": "f",
+   "text": "    public static void f(android.window.OnBackInvokedDispatcher p0, dev.local.newsoul.k2 p1) {\n        p0.registerOnBackInvokedCallback(0, p1);\n        return;\n    }"
+  },
+  {
+   "name": "g",
+   "text": "    public static void g(android.graphics.RuntimeShader p0, float p1) {\n        p0.setFloatUniform(\"strength\", p1);\n        return;\n    }"
+  },
+  {
+   "name": "h",
+   "text": "    public static void h(android.graphics.RuntimeShader p0, float p1, float p2) {\n        p0.setFloatUniform(\"halfSize\", p1, p2);\n        return;\n    }"
+  },
+  {
+   "name": "i",
+   "text": "    public static void i(android.window.OnBackInvokedDispatcher p0, dev.local.newsoul.k2 p1) {\n        p0.unregisterOnBackInvokedCallback(p1);\n        return;\n    }"
+  },
+  {
+   "name": "j",
+   "text": "    public static void j(android.graphics.RuntimeShader p0, float p1) {\n        p0.setFloatUniform(\"density\", p1);\n        return;\n    }"
+  },
+  {
+   "name": "k",
+   "text": "    public static void k(android.graphics.RuntimeShader p0, float p1, float p2) {\n        p0.setFloatUniform(\"sourceSize\", p1, p2);\n        return;\n    }"
+  },
+  {
+   "name": "l",
+   "text": "    public static void l(android.graphics.RuntimeShader p0, float p1) {\n        p0.setFloatUniform(\"dark\", p1);\n        return;\n    }"
+  }
+ ],
+ "J0": [
+  {
+   "name": "a",
+   "text": "    public static void a(android.graphics.RenderNode p0, android.graphics.RenderEffect p1) {\n        p0.setRenderEffect(p1);\n        return;\n    }"
+  }
+ ],
+ "N0": [
+  {
+   "name": "a",
+   "text": "    public static long a(android.content.pm.PackageInfo p0) {\n        return p0.getLongVersionCode();\n    }"
+  },
+  {
+   "name": "b",
+   "text": "    public static void b(android.widget.TextView p0) {\n        p0.setAccessibilityHeading(1);\n        return;\n    }"
+  }
+ ],
+ "T0": [
+  {
+   "name": "c",
+   "text": "    public static int c(java.lang.String p0, java.lang.String p1) {\n        Pattern pattern = a;\n        if (!pattern.matcher(p0).matches() || !pattern.matcher(p1).matches()) {\n            throw new IllegalArgumentException(\"无法识别版本号\");\n        }\n        String[] split = p0.split(\"\\\\.\");\n        String[] split2 = p1.split(\"\\\\.\");\n        int i = 0;\n        while (i < 3) {\n            int compareTo = new java.math.BigInteger(split[i]).compareTo(new java.math.BigInteger(split2[i]));\n            if (compareTo != 0) {\n                return compareTo;\n            }\n            i++;\n        }\n        return 0;\n    }"
+  }
+ ],
+ "k": [
+  {
+   "name": "a",
+   "text": "    public static int a() {\n        return android.view.WindowInsets.Type.ime();\n    }"
+  },
+  {
+   "name": "b",
+   "text": "    public static android.graphics.Insets b(android.view.WindowInsets p0, int p1) {\n        return p0.getInsetsIgnoringVisibility(p1);\n    }"
+  },
+  {
+   "name": "c",
+   "text": "    public static android.graphics.Rect c(android.view.WindowMetrics p0) {\n        return p0.getBounds();\n    }"
+  },
+  {
+   "name": "d",
+   "text": "    public static android.view.WindowInsets d(android.view.WindowMetrics p0) {\n        return p0.getWindowInsets();\n    }"
+  },
+  {
+   "name": "e",
+   "text": "    public static android.view.WindowInsetsController e(android.view.View p0) {\n        return p0.getWindowInsetsController();\n    }"
+  },
+  {
+   "name": "f",
+   "text": "    public static android.view.WindowMetrics f(android.view.WindowManager p0) {\n        return p0.getCurrentWindowMetrics();\n    }"
+  },
+  {
+   "name": "g",
+   "text": "    public static void g(android.view.WindowInsetsController p0, int p1) {\n        p0.hide(p1);\n        return;\n    }"
+  },
+  {
+   "name": "h",
+   "text": "    public static boolean h(android.view.View p0) {\n        return p0.hasOnLongClickListeners();\n    }"
+  },
+  {
+   "name": "i",
+   "text": "    public static boolean i(android.view.WindowInsets p0, int p1) {\n        return p0.isVisible(p1);\n    }"
+  },
+  {
+   "name": "j",
+   "text": "    public static int j() {\n        return android.view.WindowInsets.Type.systemBars();\n    }"
+  }
+ ],
+ "D1": [
+  {
+   "name": "<init>",
+   "text": "    public D1(boolean p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "H1": [
+  {
+   "name": "<init>",
+   "text": "    public H1(int p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "L": [
+  {
+   "name": "<init>",
+   "text": "    public L(int p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "L1": [
+  {
+   "name": "<init>",
+   "text": "    public L1(java.lang.String[] p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "R2": [
+  {
+   "name": "<init>",
+   "text": "    public R2(dev.local.newsoul.b3 p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "S0": [
+  {
+   "name": "<init>",
+   "text": "    public S0(long p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "S2": [
+  {
+   "name": "<init>",
+   "text": "    public S2(dev.local.newsoul.b3 p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "T2": [
+  {
+   "name": "<init>",
+   "text": "    public T2(dev.local.newsoul.b3 p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "b0": [
+  {
+   "name": "<init>",
+   "text": "    public b0(dev.local.newsoul.f0 p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "k2": [
+  {
+   "name": "<init>",
+   "text": "    public k2(dev.local.newsoul.q2 p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "l": [
+  {
+   "name": "<init>",
+   "text": "    public l(android.app.Activity p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "n2": [
+  {
+   "name": "<init>",
+   "text": "    public n2(dev.local.newsoul.q2 p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "o2": [
+  {
+   "name": "<init>",
+   "text": "    public o2(dev.local.newsoul.q2 p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ],
+ "s2": [
+  {
+   "name": "<init>",
+   "text": "    public s2(dev.local.newsoul.v2 p0) {\n        super();\n        this.a = p0;\n    }"
+  }
+ ]
+}

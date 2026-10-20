@@ -1,0 +1,69 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  android.app.AlertDialog
+ *  android.graphics.RenderEffect
+ *  android.graphics.RuntimeShader
+ *  android.window.OnBackInvokedCallback
+ *  android.window.OnBackInvokedDispatcher
+ */
+package dev.local.newsoul;
+
+import android.app.AlertDialog;
+import android.graphics.RenderEffect;
+import android.graphics.RuntimeShader;
+import android.window.OnBackInvokedCallback;
+import android.window.OnBackInvokedDispatcher;
+import dev.local.newsoul.k2_0;
+
+public abstract class I0 {
+    public static /* bridge */ /* synthetic */ RenderEffect a(RuntimeShader runtimeShader) {
+        return RenderEffect.createRuntimeShaderEffect((RuntimeShader)runtimeShader, (String)"content");
+    }
+
+    public static /* synthetic */ RuntimeShader b() {
+        return new RuntimeShader("uniform shader content;\nuniform float2 center;\nuniform float2 halfSize;\nuniform float2 sourceSize;\nuniform float radius;\nuniform float strength;\nuniform float density;\nuniform float dark;\nhalf4 main(float2 p) {\n    float2 local = p-center;\n    float2 corner = abs(local)-halfSize+radius;\n    float2 outside = max(corner, 0.0);\n    float sd = length(outside)+min(max(corner.x,corner.y),0.0)-radius;\n    float2 n;\n    if (length(outside)>0.001) n = sign(local)*normalize(outside);\n    else n = abs(corner.x-corner.y)<0.001 ? float2(0.0,-1.0)\n            : sign(local)*(corner.x>corner.y ? float2(1.0,0.0) : float2(0.0,1.0));\n    float depth = max(-sd,0.0);\n    float rimWidth = min(min(halfSize.x,halfSize.y)*0.65, density*(4.5+strength*3.0));\n    float edge = 1.0-smoothstep(0.0,max(rimWidth,0.01),depth);\n    float curved = 1.0-sqrt(max(0.0,1.0-edge*edge));\n    float bend = curved*rimWidth*(0.35+strength*0.5);\n    float2 src = center+local/(1.0+strength*0.16)-n*bend;\n    float2 split = n*density*(0.10+strength*0.45)*edge;\n    float2 lo = float2(0.5), hi = sourceSize-float2(0.5);\n    half4 c = content.eval(clamp(src,lo,hi));\n    half4 r = content.eval(clamp(src+split,lo,hi));\n    half4 b = content.eval(clamp(src-split,lo,hi));\n    // content is premultiplied. Keep a clear film clear instead of turning\n    // transparent pixels into an opaque pastel plate during tint/highlight math.\n    half alpha = c.a;\n    half3 rgb = half3(r.r,c.g,b.b)/max(alpha,half(0.001));\n    // A thin transmission tint; highlights remain neutral rather than green.\n    rgb = mix(rgb,half3(0.46,0.86,0.79),half(0.018+dark*0.012));\n    float facing = dot(n,float2(-0.6,-0.8));\n    float front = pow(max(facing,0.0),4.0);\n    float back = pow(max(-facing,0.0),6.0);\n    float rim = 1.0-smoothstep(0.0,density*0.8,depth);\n    float inner = (1.0-smoothstep(density*0.8,density*2.8,depth))*(1.0-rim);\n    rgb *= half(1.0-inner*(0.035+0.025*strength));\n    half reflection = half(rim*(0.04+front*0.32+back*0.12));\n    return half4(mix(rgb*alpha,half3(1.0),reflection),alpha+(1.0-alpha)*reflection);\n}\n");
+    }
+
+    public static /* bridge */ /* synthetic */ OnBackInvokedDispatcher c(AlertDialog alertDialog) {
+        return alertDialog.getOnBackInvokedDispatcher();
+    }
+
+    public static /* bridge */ /* synthetic */ void d(RuntimeShader runtimeShader, float f) {
+        runtimeShader.setFloatUniform("radius", f);
+    }
+
+    public static /* bridge */ /* synthetic */ void e(RuntimeShader runtimeShader, float f, float f2) {
+        runtimeShader.setFloatUniform("center", f, f2);
+    }
+
+    public static /* bridge */ /* synthetic */ void f(OnBackInvokedDispatcher onBackInvokedDispatcher, k2_0 k2_02) {
+        onBackInvokedDispatcher.registerOnBackInvokedCallback(0, (OnBackInvokedCallback)k2_02);
+    }
+
+    public static /* bridge */ /* synthetic */ void g(RuntimeShader runtimeShader, float f) {
+        runtimeShader.setFloatUniform("strength", f);
+    }
+
+    public static /* bridge */ /* synthetic */ void h(RuntimeShader runtimeShader, float f, float f2) {
+        runtimeShader.setFloatUniform("halfSize", f, f2);
+    }
+
+    public static /* bridge */ /* synthetic */ void i(OnBackInvokedDispatcher onBackInvokedDispatcher, k2_0 k2_02) {
+        onBackInvokedDispatcher.unregisterOnBackInvokedCallback((OnBackInvokedCallback)k2_02);
+    }
+
+    public static /* bridge */ /* synthetic */ void j(RuntimeShader runtimeShader, float f) {
+        runtimeShader.setFloatUniform("density", f);
+    }
+
+    public static /* bridge */ /* synthetic */ void k(RuntimeShader runtimeShader, float f, float f2) {
+        runtimeShader.setFloatUniform("sourceSize", f, f2);
+    }
+
+    public static /* bridge */ /* synthetic */ void l(RuntimeShader runtimeShader, float f) {
+        runtimeShader.setFloatUniform("dark", f);
+    }
+}
+
